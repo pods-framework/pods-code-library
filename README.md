@@ -26,6 +26,10 @@ Road Map For This Project
 Structure
 =========
 
+Each root folder except `/resources` is the post type. `/resources` contains images and other resources that are uploaded to the server.
+
+Currently `@posttype(path/to/post-file.md)` can be used for imports.
+
 ### Pages `/pages`
 Post type: page
 
