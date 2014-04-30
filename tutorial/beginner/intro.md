@@ -2,7 +2,7 @@
     "title": "First steps through Pods",
     "excerpt": "Basic tutorial on using pods"
     }
-}</script>
+</script>
 
 ## Example:
 

@@ -2,6 +2,6 @@
     "title": "Contributing",
     "excerpt": "Contributing to the documentation"
     }
-}</script>
+</script>
 
 @include(contributing.md)

@@ -1,6 +1,7 @@
 <script>{
     "title": "What is Pods?"
-    }</script>
+    }
+</script>
 
 ## WordPress Content Types and Fields
 

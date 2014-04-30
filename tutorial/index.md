@@ -1,6 +1,6 @@
 <script>{
     "title": "Tutorials"
     }
-}</script>
+</script>
 
 # Tutorials

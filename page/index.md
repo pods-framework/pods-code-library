@@ -1,6 +1,6 @@
 <script>{
     "title": "Pods Code Library"
     }
-}</script>
+</script>
 
 # Pods Code Library

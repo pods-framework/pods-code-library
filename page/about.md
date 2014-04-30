@@ -1,6 +1,6 @@
 <script>{
     "title": "About this site"
     }
-}</script>
+</script>
 
 # About this site
