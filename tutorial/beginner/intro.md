@@ -6,4 +6,6 @@
 
 ## Example:
 
-@example(classes/Pods/find/examples/example-1.php)
+```php
+@partial(classes/Pods/find/examples/example-1.php)
+```

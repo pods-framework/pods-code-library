@@ -4,4 +4,4 @@
     }
 </script>
 
-@include(contributing.md)
+@partial(/contributing.md)
