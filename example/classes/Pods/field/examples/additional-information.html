@@ -1,0 +1,51 @@
+<h4 id="additional-information" class="collapsible">Additional Information</h4>
+<div class="code-section additional-information">
+    Right now, you can only reference fields on that object, or relationships/file uploads. It doesn't let you grab field values that are meta-based or on the Pods-created table.
+    <h4>Available options for the field name as of Pods 2.3</h4>
+    Relationships to post types:
+    <ul>
+        <li><strong>related_post_type.post_title</strong></li>
+        <li><strong>related_post_type.another_relationship</strong></li>
+        <li><strong>related_post_type.custom_simple_relationship</strong> <em>
+        </em></li>
+        <li><strong>related_post_type.custom_meta_field</strong></li>
+        <li><strong>another_post_type.custom_table_field</strong></li>
+    </ul>
+    Post thumbnails (where enabled):
+    <ul>
+        <li><strong>post_thumbnail</strong> <em>(for post types)</em></li>
+        <li><strong>post_thumbnail.full</strong> <em>(for post types, traversal is the size to use, thumbnail default, accepts thumbnail, medium, large, full, 400x111, etc)</em></li>
+        <li><strong>post_thumbnail_url</strong> <em>(for post types)</em></li>
+        <li><strong>post_thumbnail_url.full</strong> <em>(for post types, traversal is the size to use, thumbnail default, accepts thumbnail, medium, large, full, 400x111, etc)</em></li>
+    </ul>
+    Relationships to taxonomies:
+    <ul>
+        <li><strong>taxonomy_name.term_id</strong> <em>
+        </em></li>
+        <li><strong>taxonomy_name.custom_table_field</strong></li>
+    </ul>
+    Users:
+    <ul>
+        <li><strong>avatar</strong> <em>(for users)</em></li>
+        <li><strong>avatar.32</strong> <em>(for users, traversal is the size to use, must be integer, default is 96, max is 512)</em></li>
+    </ul>
+    Files:
+    <ul>
+        <li><strong>file_field_name._src</strong> / <strong>file_field_name._src.full</strong> URL for full image size</li>
+        <li><strong>file_field_name._src.thumbnail</strong> URL for thumbnail image size</li>
+        <li><strong>file_field_name._src.sizename</strong> URL for custom image size</li>
+        <li><strong>file_field_name._src_relative.sizename</strong> Relative URL (to root domain) for custom image size (_src.* notation the same)</li>
+        <li><strong>file_field_name._src_schemeless.sizename</strong> Schemeless URL (// instead of http://) for custom image size (_src.* notation the same)</li>
+        <li><strong>file_field_name._img.sizename</strong> Image HTML for custom image size (_src.* notation the same)</li>
+    </ul>
+    Special notation for working with images attachments:
+    <ul>
+        <li><strong>image_attachment.123</strong> <em>(output an image by attachment ID)</em></li>
+        <li><strong>image_attachment.123.full</strong> <em>(output an image by attachment ID, traversal is the size to use, thumbnail default, accepts thumbnail, medium, large, full, 400x111, etc)</em></li>
+        <li><strong>image_attachment_url.123</strong> <em>(output an image URL by attachment ID)</em></li>
+        <li><strong>image_attachment_url.123.full</strong> <em>(output an image URL by attachment ID, traversal is the size to use, thumbnail default, accepts thumbnail, medium, large, full, 400x111, etc)</em></li>
+        <li><strong>file_field_name._src</strong> / <strong>file_field_name._src_full</strong> URL for full image size</li>
+        <li><strong>file_field_name._src_sizename</strong> URL for custom image size</li>
+        <li><strong>file_field_name._src_thumbnail</strong> URL for thumbnail image size</li>
+    </ul>
+</div>
