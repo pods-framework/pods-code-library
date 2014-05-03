@@ -10,25 +10,18 @@ Goals
 * Automatically populate Pods documentation from inline documentation in code.
 * Open source and document the process to help others in the WordPress community do this.
 
-Inspiration
-===========
-http://contribute.jquery.org/web-sites
-https://github.com/easydigitaldownloads
-
-
-Road Map For This Project
-========================
-* @unknownnf Works on a prototype of the doc import [issue](https://github.com/pods-framework/pods-code-library/issues/1)
-* shelob9 and naomicbush figure out the structure for the format of the code example library component. [issue](https://github.com/pods-framework/pods-code-library/issues/2)
-* shelob9 lays out the example library and works with doc team to get some inital content in there.
-* Build working example for code import and example code library on a new site in Pods.io wpengine account.
-
 Structure
 =========
 
-Each root folder except `/resources` is the post type. `/resources` contains images and other resources that are uploaded to the server.
+Each root folder except `/resources` and `/example` is the post type. `/resources` contains images and other resources that are uploaded to the server while `/examples` contains code examples to be used as partials.
 
-Currently `@posttype(path/to/post-file.md)` can be used for imports.
+Wordpress post files are generated out of .md or .html files, partials are always skipped.
+
+### Partials
+
+`@partial(/path/to/file)` import a file with a full path.
+
+`@partial(./relative/to/current/file)` import a file relative to the current file.
 
 ### Pages `/pages`
 Post type: page
