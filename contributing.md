@@ -37,11 +37,20 @@ Another example, for the save_field method of the PodsAPI class: The example wou
 
 2) Click on the file you wish to edit, or add your own by clicking the add file button. If adding a new file, name it for the type of examples(s) you intend to add.
 
+![Add file](http://i.imgur.com/TcRfQaa.png "Adding a new file")
+
+
 3) Begin the file with opening php tags. Start each example with a multi-line comment using `/**` and `*/` to describe the example. Use single line comments starting with `//` to explain the code as needed. If appropriate describe output in comments.
 
 4) Save the file with a short commit message.
 
+![New example](http://i.imgur.com/Od53Bgb.png "Creating new code example")
+
+
 5) Submit a pull request against the master branch. If need be elaborate on the code example.
+
+![Submitting pull request](http://i.imgur.com/33LmA9W.png "Submitting a new pull request")
+
 
 ## About The Pods Code Library
 The Pods code library, which is currently under development, is inspired by, and the code that generates the site is forked from the jQuery documentation. For more information see: [http://contribute.jquery.org/web-sites](http://contribute.jquery.org/web-sites). The excellent suggestion to use this approach came from [Naomi Bush](https://naomicbush.com/).
