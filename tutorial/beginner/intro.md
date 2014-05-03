@@ -7,5 +7,5 @@
 ## Example:
 
 ```php
-@partial(/classes/Pods/find/examples/example-1.php)
+@partial(/example/classes/Pods/find/examples/example-1.php)
 ```
