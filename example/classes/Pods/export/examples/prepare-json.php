@@ -4,8 +4,9 @@
  */
 //This is based on a tutorial by Markus Stefanko: http://blog.stefanxo.com/2013/08/output-json-with-pods/
 
+/**Build object for use in a template for a Pods Page**/
 //get current url
-$slug = pods_var( 'last', 'url' );
+$slug = pods_v( 'last', 'url' );
 //get pods object for current item
 $pods = pods( 'pod_name', $slug );
 
