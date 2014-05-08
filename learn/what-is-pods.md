@@ -19,4 +19,4 @@ You can also use Pods to extend your current content types. Perhaps you want to 
 
 Pods has an intuitive admin interface. You can choose whether you wish to create a new content type or extend an existing content type:
 
-@resource(/learn/what-is-pods-1.jpg)
+![What is pods](/resources/learn/what-is-pods-1.jpg)
