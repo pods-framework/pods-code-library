@@ -17,7 +17,7 @@ pods_ui( $ui );
 $object = pods( 'yourpod' );
 
 $ui = array(
-	'pod' => $object;
+	'pod' => $object,
     'title' => 'My Pod',
     'add_fields' => array( 'name', 'body' ),
     'edit_fields' => array( 'name', 'body', 'approved' )
