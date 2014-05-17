@@ -1,6 +1,6 @@
 <?php
 /**
- * Update Taxonomy With Value Of Field Realted To Taxonomy
+ * Update Taxonomy With Value Of Field Related To A Taxonomy
  * Takes the value of a single-select field 'genre' related to the taxonomy 'genres' and updates the taxonomy with the term set in the 'genre' field from the custom post type 'films'.
  */
 add_action( 'pods_api_post_save_pod_item_films', 'my_tax_update', 10, 3 );
