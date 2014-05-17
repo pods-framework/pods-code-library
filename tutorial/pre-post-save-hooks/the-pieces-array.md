@@ -1,3 +1,8 @@
+<script>{
+    "title": "Understanding the $pieces Array In pre_save and post_save Hooks",
+    "excerpt": ""
+    }
+</script>
 Each of the pre_save filters and post_save actions has a parameter `$pieces`, which is an array contains the values being saved as well as additional information about the Pod. In this article, I will walk you though the contents of this array, key by key.
 
 Keep in mind that when using pre_save filters, in order for any saving to happen, `$peices` must be returned. If not saving will be prevented. This is something you may choose to do intentionlly.

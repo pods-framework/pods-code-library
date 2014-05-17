@@ -21,8 +21,3 @@ All three types can target specific Pods. For example, while `pods_api_post_save
 
 ## Parameters
 Each of the pre_save filters and post_save actions has, as its parameter the `$pieces` array, which contains information about the Pod, as well as the values being saved as well as a parameter, `$id`, with the ID of the item being updated. The $pieces array is fairly complex and is covered in depth in its own article in this series. The general type `pods_api_pre_save_pod_item` and `pods_api_post_save_pod_item` also has a parameter, `$is_new_item` to determine if a the item being updated is new or not.
-
-## Parts In This Series
-* The Pieces Array
-* Using pre_save Filters
-* Using post_save Actions

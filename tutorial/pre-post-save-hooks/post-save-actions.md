@@ -1,4 +1,10 @@
-Pods post_save actions offer the same parameters as their pre_save counterparts, but are not able to change the values being saved, as the run too late. Instead, post-save actions are best serve for when a value being saved is passed to some other function or to the Pods API to update another item. These examples make use of the `$pieces` array that is the primary parameter fo all pre_save filters. If you are not familiar with its contents, you should see the article in this series that walks you through its contents.
+<script>{
+    "title": "Using Pods post_save Actions",
+    "excerpt": ""
+    }
+</script>
+
+Pods post_save actions offer the same parameters as their pre_save counterparts, but are not able to change the values being saved, as the run too late. Instead, post-save actions are best serve for when a value being saved is passed to some other function or to the Pods API to update another item. These examples make use of the `$pieces` array that is the primary parameter fo all pre_save filters. If you are not familiar with its contents, you should read [the article in this series that walks you through its contents](/tutorial/pre-post-save-hooks/the-pieces-array.md).
 
 ## Basic Examples
 
