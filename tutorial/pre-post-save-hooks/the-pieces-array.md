@@ -1,6 +1,7 @@
 <script>{
     "title": "Understanding the $pieces Array In pre_save and post_save Hooks",
-    "excerpt": ""
+    "excerpt": "",
+    "menu_order": "1",
     }
 </script>
 Each of the pre_save filters and post_save actions has a parameter `$pieces`, which is an array contains the values being saved as well as additional information about the Pod. In this article, I will walk you though the contents of this array, key by key.
