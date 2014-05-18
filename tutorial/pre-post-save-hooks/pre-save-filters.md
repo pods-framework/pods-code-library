@@ -2,6 +2,7 @@
     "title": "Using Pods pre_save Filters",
     "excerpt": "",
     "menu_order": "2",
+    "author": Josh Pollock,
     }
 </script>
 
