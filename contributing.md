@@ -22,8 +22,44 @@ http://pods.io/inline-documentation-filters-actions/
 
 * The current development branch is [3.0-unstable](https://github.com/pods-framework/pods/tree/3.0-unstable) all pull requests should be submit against that branch.
 
-###  Submitting Tutorials
-Submission of tutorials, either directly to Pods.io, or as links to posts on your own site are highly encouraged and are a great way to contribute to Pods. At this time tutorials are managed by the main WordPress install for Pods.io. For more information on submitting a tutorial, please see: [http://pods.io/submitting-tutorial-pods-io/](http://pods.io/submitting-tutorial-pods-io/)
+###  Writing Tutorials
+Submission of tutorials, either the full text, or as a link to a post on your own page is encouraged. You are also welcome to submit pull requests to improve or update existing tutorials.
+
+#### Creating Full Text Tutorials
+All tutorials, whether they are single post, or a multi-post series must have a file in the tutorial directory. This may be the full text of the tutorial, or an introduction to a multi-post series. If it is a multi-post series, each part should be contained in a subfolder or tutorial with the same name as the parent article.
+
+All posts should include a header with the title, excerpt, author and if it is a part of a multi-part series, the order of the post in the series. The order for multi-part tutorial series is set using the "menu_order" field. This field should be omitted for parent posts. For example:
+
+```no-highlight
+<script>{
+    "title": "Using Pods post_save Actions",
+    "excerpt": "",
+    "menu_order": "3",
+    "author": Josh Pollock
+    }
+</script>
+```
+
+A tutorial post can embed content from anywhere in the code library, for example a code example, or from another GitHub repo, for example the source code of Pods or a Pods plugin. In both cases you use the three ticks, followed by the language method from the markdown language to set syntax highlighting around a `@partial()` statement.
+
+To embed example code from the Pods Code Library, you would give the full file path, relative to the root of this repository. For example,
+
+```no-highlight
+```php
+@partial(/example/hooks/actions/pods_api_post_save_pod_item_podname/examples/update_taxonomy.php)
+```
+```
+
+To embed lines of code from another GitHub repository, you would give the full path to the repository, optionally with line numbers. For example:
+
+```no-highlight
+```php
+@partial(https://github.com/pods-framework/pods/blob/2.x/classes/Pods.php#L261-L275)
+```
+```
+
+#### Creating Links To External Tutorials
+@TODO
 
 ## Code Library Submission Instructions
 ### Location For Code Examples
