@@ -41,3 +41,32 @@ Custom post type: cookbook-recipe
 ### Examples `/examples`
 
 Custom post type: example
+
+Installing Locally
+=================
+## Before Installing
+Installing locally requires nodejs, Grunt  and npm.
+
+* You can download a packaged installer for nodejs at: http://nodejs.org/download/
+
+* Once nonejs is installed, you can install grunt and npm from the Terminal:
+`$ npm install -g grunt-cli`
+
+For more information see: http://gruntjs.com/getting-started
+
+## Installing
+* Clone this repository:
+
+`$ git clone https://github.com/pods-framework/pods-code-library-generator.git`
+
+* Change into its directory:
+`$ cd pods-code-library-generator`
+
+* Change config.sample.json to config.json
+`$ mv config.sample.json config.json`
+
+* Update npm
+`$ npm update`
+
+* Run Grunt
+`$ grunt`
