@@ -45,17 +45,17 @@ A tutorial post can embed content from anywhere in the code library, for example
 To embed example code from the Pods Code Library, you would give the full file path, relative to the root of this repository. For example,
 
 ```no-highlight
-```php
+&#96&#96&#96php
 @partial(/example/hooks/actions/pods_api_post_save_pod_item_podname/examples/update_taxonomy.php)
-```
+&#96&#96&#96
 ```
 
 To embed lines of code from another GitHub repository, you would give the full path to the repository, optionally with line numbers. For example:
 
 ```no-highlight
-```php
+&#96&#96&#96php
 @partial(https://github.com/pods-framework/pods/blob/2.x/classes/Pods.php#L261-L275)
-```
+&#96&#96&#96
 ```
 
 #### Creating Links To External Tutorials
