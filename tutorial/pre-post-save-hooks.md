@@ -1,6 +1,8 @@
 <script>{
     "title": "Pods pre_save and post_save Hooks",
-    "excerpt": ""
+    "excerpt": "A series of posts explaining Pods pre and post save hooks."
+    "_yoast_wpseo_title": "Pods pre_save and post_save Hooks - Pods Framework",
+    "_yoast_wpseo_metadesc": "A series of posts explaining Pods pre and post save hooks.",
     }
 </script>
 

@@ -3,6 +3,9 @@
     "excerpt": "Information about when to use, and when not to use Pods Advanced Content Types.",
     "author": "Josh Pollock",
     "tutorial_type": "Choosing Content Types", "Getting Started", "Using Pods Pages",
+    "_yoast_wpseo_title": "Choosing Pods Advanced Content Types - Pods Framework",
+    "_yoast_wpseo_metadesc": "Information about when to use, and when not to use Pods Advanced Content Types.",
+
     }
 </script>
 

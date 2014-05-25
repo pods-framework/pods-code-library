@@ -1,6 +1,8 @@
 <script>{
     "title": "Using Pods post_save Actions",
-    "excerpt": "",
+   "excerpt": "When to use Pods post_save actions and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks."
+   "_yoast_wpseo_title": "Pods pre_save and post_save Hooks $pieces - Pods Framework",
+   "_yoast_wpseo_metadesc": "When to use Pods post_save actions and examples of how they can be used.",
     "menu_order": "3",
     "author": Josh Pollock
     }

@@ -1,6 +1,8 @@
 <script>{
     "title": "Understanding the $pieces Array In pre_save and post_save Hooks",
-    "excerpt": "",
+    "excerpt": "Information about the $pieces array parameter in Pods pre_save filters and post_save actions. Part of a series of posts explaining Pods pre and post save hooks."
+    "_yoast_wpseo_title": "Pods pre_save and post_save Hooks $pieces - Pods Framework",
+    "_yoast_wpseo_metadesc": "Information about the $pieces array parameter in Pods pre_save filters and post_save actions.",
     "menu_order": "1",
     "author": Josh Pollock
     }
