@@ -1,22 +1,56 @@
 {
 	"tutorial_type": [
 		{
-			"name": "Advanced",
-			"description": "Advanced is awesome",
+			"name": "Adding Custom Fields",
+			"description": "Learn how to add custom fields, the different uses and options for each one.",
 			"slug": "advanced"
 		},
 		{
-			"name": "Using Custom Taxonomies",
-			"slug": "using-custom-taxonomies"
+            "name": "Advanced",
+            "description": "These tutorials assume a stong familiarity and knowledge of WordPress and PHP",
+            "slug": "advanced"
 		},
 		{
-			"name": "Using Pods In Themes",
-			"slug": "using-pods-in-themes"
+			"name": "Beginner",
+            "description": "Simple tutorials, with little to no php code involved, that show you how easy it can be to use Pods.",
+			"slug": "beginner"
 		},
-		{
-			"name": "Choosing Content Types",
-			"slug": "choosing-content-types"
-		}
+        {
+            "name": "Choosing Content Types",
+            "description": "Pods allows you to create or extend a variety of different content types and objects in WordPress, each with its own capabilities, advantages and disadvantages.",
+            "slug": "choosing-content-types"
+        },
+        {
+            "name": "Extending Existing Content Types",
+            "description": "Learn how to extend existing content types and objects like users, comments and more.",
+            "slug": "extending-existing-content-types"
+        },
+        {
+            "name": "Getting Started",
+            "description": "The first steps to using Pods to transform WordPress into a powerful content management system.",
+            "slug": "getting-started"
+        },
+        {
+            "name": "Media Handling With Pods",
+            "description": "Learn how to create fields for images, videos or other media files and output them on your site.",
+            "slug": "media-handling-with-pods"
+        },
+        {
+            "name": "Using Custom Taxonomies",
+            "description": "Organize your content with custom taxonomies that function like WordPress' built-in tags and categories. You can even add custom fields to them.",
+            "slug": "using-custom-taxonomies"
+        },
+        {
+            "name": "Using Pods In Themes",
+            "description": "Learn how to display Pods Advanced Content Types using Pods Pages.",
+            "slug": "using-pods-pages"
+        },
+        {
+            "name": "Using Pods Templates",
+            "description": "Create templates for displaying Pods custom fields using a simple templateing engine.",
+            "slug": "using-pods-templates"
+        }
+
 	],
 	"example_hierarchical": [
 		{
