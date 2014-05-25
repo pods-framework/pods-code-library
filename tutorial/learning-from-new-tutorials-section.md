@@ -1,4 +1,5 @@
-<script>{
+<script>
+{
     "title": "Learning From The New Tutorials Section",
     "excerpt": "Code and strategies used in the tutorials section redesign you can use to help display custom post types and custom taxonomies in your WordPress theme.",
     "author": "Josh Pollock",
@@ -11,7 +12,7 @@
     {"key":"_yoast_wpseo_title", "value": "Learning From The New Tutorials Section - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Code and strategies used in the tutorials section redesign you can use to help display custom post types and custom taxonomies in your WordPress theme."}
     ]
-    }
+}
 </script>
 
 As you might have noticed I did some work on the <a href="http://pods.io/tutorials">tutorials section</a> here on Pods.io recently to improve the organizing of the content. I added a new custom taxonomy, using Pods of course, to organize the tutorials--a custom post type--by user level and by subject. I then created a special template file for the first page of the tutorials section, as well as one for the tutorial_type archive in our theme, along with a handful of functions.
