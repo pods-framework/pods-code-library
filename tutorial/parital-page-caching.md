@@ -1,11 +1,18 @@
-<script>{
+<script>
+{
     "title": "Partial Page Caching and Smart Template Parts with Pods",
     "excerpt": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical.",
     "author": "Josh Pollock",
-     "tutorial_type": "Advanced", "Using Pods In Themes",
-     "_yoast_wpseo_title": "Partial Page Caching and Smart Template Parts - Pods Framework",
-     "_yoast_wpseo_metadesc": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical.",
-    }
+    "termSlugs": {
+            "tutorial_type": [
+                "advanced","using-pods-in-themes"
+            ]
+        },
+        "customFields: [
+            {"key":"_yoast_wpseo_title", "value": "Partial Page Caching and Smart Template Parts - Pods Framework"},
+            {"key":"_yoast_wpseo_metadesc", "value": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical."}
+        ]
+}
 </script>
 
 <a href="http://pods.io/docs/code/pods-view/" target="_blank">pods_view()</a> can be used in a similar way to the WordPress function <a href="http://codex.wordpress.org/Function_Reference/get_template_part" target="_blank">get_template_part()</a>, but provides advanced options including the ability to utilize Partial Page Caching to cache the included output into the object cache or transients to improve performance. It can also pass data, such as all or part of your current $pods object to them. There's also a helpful filter that allows you to override what's returned for any instance of <code>pods_view()</code>, which is one of the reasons Pods core uses it for it's field type inputs and other admin / front-end views.
