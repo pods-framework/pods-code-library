@@ -1,9 +1,18 @@
-<script>{
+<script>
+{
     "title": "Pods pre_save and post_save Hooks",
     "excerpt": "A series of posts explaining Pods pre and post save hooks."
-    "_yoast_wpseo_title": "Pods pre_save and post_save Hooks - Pods Framework",
-    "_yoast_wpseo_metadesc": "A series of posts explaining Pods pre and post save hooks.",
-    }
+    "author": "Josh Pollock",
+    "termSlugs": {
+        "tutorial_type": [
+            "advanced"
+        ]
+    },
+    "customFields: [
+        {"key":"_yoast_wpseo_title", "value": "Pods pre_save and post_save Hooks - Pods Framework"},
+        {"key":"_yoast_wpseo_metadesc", "value": "A series of posts explaining Pods pre and post save hooks."}
+    ]
+}
 </script>
 
 Pods has a series of hooks that run before and after an item is saved. These hooks, the pre_save filters and post_save actions are powerful tools for modifying the data that Pods saves, or triggering other actions based on what is being saved. There are multiple types of each hook, and each can be created to affect all Pods or just certain ones.

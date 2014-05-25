@@ -1,11 +1,19 @@
-<script>{
+<script>
+{
     "title": "Using Pods pre_save Filters",
-    "excerpt": "When to use Pods pre_save filters and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks."
-    "_yoast_wpseo_title": "Pods pre_save and post_save Hooks $pieces - Pods Framework",
-    "_yoast_wpseo_metadesc": "When to use Pods pre_save filters and examples of how they can be used.",
+    "excerpt": "When to use Pods pre_save filters and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks.",
     "menu_order": "2",
     "author": Josh Pollock,
-    }
+    "termSlugs": {
+            "tutorial_type": [
+                "advanced"
+            ]
+        },
+        "customFields: [
+            {"key":"_yoast_wpseo_title", "value": "Using Pods pre_save Filters - Pods Framework"},
+            {"key":"_yoast_wpseo_metadesc", "value": "When to use Pods pre_save filters and examples of how they can be used."}
+        ]
+}
 </script>
 
 Pods pre_save actions are a powerful feature of Pods that allows to modify what is saved in your Pod whenever the Pod is updated, either from the WordPress backend or via the Pods API. In this tutorial I will walk you through some practical uses for pre_save filter. These examples make use of the `$pieces` array that is the primary parameter fo all pre_save filters. If you are not familiar with its contents, you should see [the article in this series that walks you through its contents](/tutorial/pre-post-save-hooks/the-pieces-array.md).

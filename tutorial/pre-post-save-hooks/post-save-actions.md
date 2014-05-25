@@ -1,11 +1,19 @@
-<script>{
-    "title": "Using Pods post_save Actions",
-   "excerpt": "When to use Pods post_save actions and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks."
-   "_yoast_wpseo_title": "Pods pre_save and post_save Hooks $pieces - Pods Framework",
-   "_yoast_wpseo_metadesc": "When to use Pods post_save actions and examples of how they can be used.",
-    "menu_order": "3",
-    "author": Josh Pollock
-    }
+<script>
+{
+   "title": "Using Pods post_save Actions",
+   "excerpt": "When to use Pods post_save actions and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks.",
+   "menu_order": "3",
+   "author": Josh Pollock,
+   "termSlugs": {
+               "tutorial_type": [
+                   "advanced"
+               ]
+           },
+           "customFields: [
+               {"key":"_yoast_wpseo_title", "value": "Using Pods post_save Filters - Pods Framework - Pods Framework"},
+               {"key":"_yoast_wpseo_metadesc", "value": "When to use Pods post_save filters and examples of how they can be used."}
+           ]
+}
 </script>
 
 Pods post_save actions offer the same parameters as their pre_save counterparts, but are not able to change the values being saved, as the run too late. Instead, post-save actions are best serve for when a value being saved is passed to some other function or to the Pods API to update another item. These examples make use of the `$pieces` array that is the primary parameter fo all pre_save filters. If you are not familiar with its contents, you should read [the article in this series that walks you through its contents](/tutorial/pre-post-save-hooks/the-pieces-array.md).

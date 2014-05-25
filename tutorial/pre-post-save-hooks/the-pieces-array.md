@@ -1,11 +1,19 @@
-<script>{
+<script>
+{
     "title": "Understanding the $pieces Array In pre_save and post_save Hooks",
     "excerpt": "Information about the $pieces array parameter in Pods pre_save filters and post_save actions. Part of a series of posts explaining Pods pre and post save hooks."
-    "_yoast_wpseo_title": "Pods pre_save and post_save Hooks $pieces - Pods Framework",
-    "_yoast_wpseo_metadesc": "Information about the $pieces array parameter in Pods pre_save filters and post_save actions.",
     "menu_order": "1",
-    "author": Josh Pollock
-    }
+    "author": Josh Pollock,
+    "termSlugs": {
+                "tutorial_type": [
+                    "advanced"
+                ]
+            },
+    "customFields: [
+        {"key":"_yoast_wpseo_title", "value": "The Pods Pre/Save Hooks $pieces Array- Pods Framework"},
+        {"key":"_yoast_wpseo_metadesc", "value": "Understanding the contents and use of the $pieces array in pre_save and post_save Hooks."}
+    ]
+}
 </script>
 Each of the pre_save filters and post_save actions has a parameter `$pieces`, which is an array contains the values being saved as well as additional information about the Pod. In this article, I will walk you though the contents of this array, key by key.
 
