@@ -1,12 +1,18 @@
-<script>{
+<script>
+{
     "title": "Choosing Pods Advanced Content Types and Pods Pages",
     "excerpt": "Information about when to use, and when not to use Pods Advanced Content Types.",
     "author": "Josh Pollock",
-    "tutorial_type": "Choosing Content Types", "Getting Started", "Using Pods Pages",
-    "_yoast_wpseo_title": "Choosing Pods Advanced Content Types - Pods Framework",
-    "_yoast_wpseo_metadesc": "Information about when to use, and when not to use Pods Advanced Content Types.",
-
-    }
+    "termSlugs": {
+            "tutorial_type": [
+                "getting-started","choosing-content-types","using-pods-pages"
+            ]
+        },
+        "customFields: [
+            {"key":"_yoast_wpseo_title", "value": "Choosing Pods Advanced Content Types - Pods Framework"},
+            {"key":"_yoast_wpseo_metadesc", "value": "Information about when to use, and when not to use Pods Advanced Content Types."}
+        ]
+}
 </script>
 
 Pods <strong>Advanced Content Types</strong> (or ACT) are a special content type that stores its data outside of the regular WordPress post and meta tables. There are specific cases where this is important functionality to have, but for most applications, custom post types are a better choice than using an ACT. There are a few situations where ACTs do make sense to use. For example:
