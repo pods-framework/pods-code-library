@@ -1,13 +1,19 @@
-<script>{
+<script>
+{
     "title": "Rewrite Options For Pods Custom Post Types and Taxonomies",
     "excerpt": "Learn how URL rewrite rules settings in Pods to customize the URLs for your custom post types and custom taxonomies in order to fit your needs.",
     "author": "Josh Pollock",
-     "tutorial_type": "Advanced", "Using Pods In Themes",
-     "_yoast_wpseo_title": "Pods Rewrite Options For Post Types and Taxonomies",
-     "_yoast_wpseo_metadesc": "Learn how URL rewrite rules settings in Pods to customize the URLs for your custom post types and custom taxonomies in order to fit your needs.",
-    }
+    "termSlugs": {
+        "tutorial_type": [
+            "advanced","using-pods-in-themes"
+        ]
+    },
+    "customFields: [
+        {"key":"_yoast_wpseo_title", "value": "Pods Rewrite Options For Post Types and Taxonomies - Pods Framework"},
+        {"key":"_yoast_wpseo_metadesc", "value": "Learn how URL rewrite rules settings in Pods to customize the URLs for your custom post types and custom taxonomies in order to fit your needs."}
+    ]
+}
 </script>
-
 Pods provides several URL rewrite options that allow you to customize the URLs for items in your custom post types and custom taxonomies in order to fit your needs. In this tutorial, I will go over the various options and what changes they result in.
 
 All of these options are available in the "Advanced Options" tab of the Pods editor.
