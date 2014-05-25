@@ -1,11 +1,20 @@
-<script>{
+<script>
+{
     "title": "SEO For Pods Advanced Content Types",
     "excerpt": "Pods Advanced Content Types (ACT) do not work automatically with Yoast's WordPress SEO or any other SEO plugin since they are not WordPress content types. Custom Post Types on the other hand do not share these issues. In this tutorial you will learn search engine optimization for Pods Advanced Content Types, including how to add your ACT to an XML Site Map and generateMeta tags--such as title and description--and Open Graph tags using Pods Pages precode.",
     "author": "Josh Pollock",
-     "_yoast_wpseo_title": "Partial Page Caching and Smart Template Parts - Pods Framework",
-     "_yoast_wpseo_metadesc": "Search Engine Optimization (SEO) for Pods Advanced Content Types. Covering: XML Site Maps, Meta tags--such as title and description--and Open Graph tags.",
-    }
+    "termSlugs": {
+        "tutorial_type": [
+            "advanced","using-pods-pages"
+        ]
+    },
+    "customFields: [
+        {"key":"_yoast_wpseo_title", "value": "Partial Page Caching and Smart Template Parts - Pods Framework"},
+        {"key":"_yoast_wpseo_metadesc", "value": "Search Engine Optimization (SEO) for Pods Advanced Content Types. Covering: XML Site Maps, Meta tags--such as title and description--and Open Graph tags."}
+        ]
+}
 </script>
+
 Pods Advanced Content Types (ACT) do not work automatically with Yoast's WordPress SEO or any other SEO plugin since they are not WordPress content types. Custom Post Types on the other hand do not share these issues. This tutorial is only applicable to ACTs and Pods Pages. I will be addressing three separate SEO concerns:
 <ol>
 	<li>XML Site Maps</li>
