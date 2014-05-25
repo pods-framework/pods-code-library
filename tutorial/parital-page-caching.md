@@ -3,6 +3,8 @@
     "excerpt": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical.",
     "author": "Josh Pollock",
      "tutorial_type": "Advanced", "Using Pods In Themes",
+     "_yoast_wpseo_title": "Partial Page Caching and Smart Template Parts - Pods Framework",
+     "_yoast_wpseo_metadesc": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical.",
     }
 </script>
 
@@ -38,25 +40,37 @@ Note that transient caching must be used to maintain the cache after the request
 <code>pods_view()</code>, which can be used with any type of WordPress data, not just Pods data, is an easy way to section off the less dynamic parts of a otherwise highly dynamic page into a separate template part that can be cached. This reduces the demands on your server, allowing it to more quickly run the database queries for the rest of the site.
 
 A basic example of moving a secondary WP_Query request and caching the content can be seen below, in a Before / After example, with the new WP_Query request going on in the new file, which can now utilize Partial Page Caching.
-[gist id="8051967" file="2-template-before.php"]
-[gist id="8051967" file="2-template-after.php"]
-[gist id="8051967" file="2-content-most-commented-on.php"]
 
-Some WordPress template files have a very small amount of user specific data that makes them incapable of using page cache when the majority of the page could be cached. For example, you might want to show posts that are of the most interest to the current user as featured posts, using categories that the user set as favorites, followed by a regular WordPress loop. Here is an example template to accomplish this:
-[gist id="8051967" file="3-template-before.php"]
+```php
+@partial(/example/includes/pods_view/examples/cache-loop-example.php)
+```
+
+Some WordPress template files have a very small amount of user specific data that makes them incapable of using page cache when the majority of the page could be cached. For example, you might want to show posts that are of the most interest to the current user as featured posts, using categories that the user set as favorites, followed by a regular WordPress loop.
 
 The query for favorite posts must be generated based on the logged in user and is omitted for users who are not logged in making page caching impossible. By moving the that block into it's own file and caching using <strong>Cache Keys</strong>, we can cache that list of category posts based on the user's categories. If other users have those same favorite categories, that loop won't have to be re-run or content rebuilt.
-[gist id="8051967" file="3-template-after.php"]
-[gist id="8051967" file="3-content-fav-category-posts.php"]
+
+Here are before and after examples of how this works:
+
+```php
+@partial(/example/includes/pods_view/examples/cache-user-specific.php)
+```
+
 <h4>Output Buffering is built-in</h4>
 With <code>get_template_part()</code>, you had to hack around the content include and use output buffering, which isn't very complex, but is also prone to error for new developers.
-[gist id="8051967" file="4-before.php"]
 
-<code>pods_view()</code> includes a 5th parameter called $return which you can set to true to return the content instead of the default of automatically echoing onto the page. This is useful if you want to apply filters, evaluate shortcodes, or replace custom template tags in the generated content.
-[gist id="8051967" file="4-after.php"]
+```php
+@partial(/example/includes/pods_view/examples/instead-of-ob.php)
+```
+
+<code>pods_view()</code> also includes a 5th parameter called $return which you can set to true to return the content instead of the default of automatically echoing onto the page. This is useful if you want to apply filters, evaluate shortcodes, or replace custom template tags in the generated content.
+
 <h4>Cache Keys and caching content from a template based on a variable</h4>
 By default, when you use <code>pods_view()</code> caching, it will return that same content anywhere in your theme that you call that cached file. To get around this and to differentiate the file in different ways on different pages or parts of the theme, we've built Cache Keying into Pods 3.0. It works by appending a ?query or #hash to the file name, with how you want the cache grouped. For example, you can use the same restricted content include but cache it based on the user role.
-[gist id="8051967" file="5-keying-example.php"]
+
+```php
+@partial(/example/includes/pods_view/examples/cache-keys.php)
+```
+
 <h3>Which Cache Method To Use</h3>
 <code>pods_view()</code> supports four options for caching, which are only utilized if <code>$expires</code> is not <code>false</code>.
 <ul>
@@ -68,7 +82,10 @@ By default, when you use <code>pods_view()</code> caching, it will return that s
 <h3>Different Expirations for Different Folks</h3>
 If a different expiration is needed for a logged in user versus an anonymous visitor, <code>pods_view()</code> has that covered too, with Advanced <code>$expires</code> handling.
 
-[gist id="8051967" file="6-dynamic-expiration.php"]
+```php
+@partial(/example/includes/pods_view/examples/user-specific-experation.php)
+```
+
 <h3>More Information About Partial Page Caching</h3>
 <a href="http://tollmanz.com/partial-page-templating-in-wordpress/" target="_blank">Towards a Partial Page Templating System in WordPress</a> by Zack Tollman
 <a title="Fragment Caching in WordPress" href="http://markjaquith.wordpress.com/2013/04/26/fragment-caching-in-wordpress/" target="_blank">Fragment Caching In WordPress</a> by Mark Jaquith
