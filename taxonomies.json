@@ -1,0 +1,39 @@
+{
+	"tutorial_type": [
+		{
+			"name": "Advanced",
+			"description": "Advanced is awesome",
+			"slug": "advanced"
+		},
+		{
+			"name": "Using Custom Taxonomies",
+			"slug": "using-custom-taxonomies"
+		},
+		{
+			"name": "Using Pods In Themes",
+			"slug": "using-pods-in-themes"
+		},
+		{
+			"name": "Choosing Content Types",
+			"slug": "choosing-content-types"
+		}
+	],
+	"example_hierarchical": [
+		{
+			"name": "Root Category",
+			"slug": "root-category",
+			"children": [
+				{
+					"name" : "Child of root",
+					"slug" : "child-of-root",
+					"children": [
+						{
+							"name" : "Child of Child",
+							"slug" : "child-of-child"
+						}
+					]
+				}
+			]
+		}
+	]
+}
