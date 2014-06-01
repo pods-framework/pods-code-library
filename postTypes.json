@@ -1,0 +1,19 @@
+{
+	"tutorial": {
+		"name": "Tutorial",
+		"label": "Tutorial",
+		"labels": "Tutorials",
+		"description": "Tutorials",
+		"excludeFromSearch": false,
+		"hasArchive": true,
+		"hierarchical": true,
+		"public": true,
+		"showInAdminBar": true,
+		"showInMenu": true,
+		"showInNavMenus": true,
+		"showUi": true,
+		"taxonomies": [
+			"tutorial_type"
+		]
+	}
+}
