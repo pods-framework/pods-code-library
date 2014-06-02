@@ -2,7 +2,7 @@
 {
     "title": "Setting Pods Custom Menu Icons",
     "excerpt": "Learn to set custom menu icons for Pods content types using the Dashicon font or any image of your choice.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "beginner"

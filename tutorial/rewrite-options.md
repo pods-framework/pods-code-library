@@ -2,7 +2,7 @@
 {
     "title": "Rewrite Options For Pods Custom Post Types and Taxonomies",
     "excerpt": "Learn how URL rewrite rules settings in Pods to customize the URLs for your custom post types and custom taxonomies in order to fit your needs.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "advanced","using-pods-in-themes"

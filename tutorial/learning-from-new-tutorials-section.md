@@ -2,7 +2,7 @@
 {
     "title": "Learning From The New Tutorials Section",
     "excerpt": "Code and strategies used in the tutorials section redesign you can use to help display custom post types and custom taxonomies in your WordPress theme.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "advanced","using-custom-taxonomies","using-pods-in-themes","choosing-content-types","getting-started","using-pods-pages"

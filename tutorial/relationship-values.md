@@ -2,7 +2,7 @@
 {
     "title": "Get Values From A Relationship Field",
     "excerpt": "Relationship fields can allow one post type (custom or not) to become a value for a field in another post type. The relationship can even be bi-directional.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "advanced","using-pods-pages","using-pods-templates"

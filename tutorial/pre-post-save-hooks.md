@@ -2,7 +2,7 @@
 {
     "title": "Pods pre_save and post_save Hooks",
     "excerpt": "A series of posts explaining Pods pre and post save hooks."
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "advanced"

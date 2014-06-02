@@ -2,7 +2,7 @@
 {
     "title": "Using Pods Pages With Advanced Content Types",
     "excerpt": "Pods Pages  are used to display content from Advanced Content Types (ACTs) and  should only be used with Advanced Content Types. Because ACTs exist outside of the main WordPress post table, they can not use regular WordPress functions, so attempting to display them with a normal WordPress theme template file would not work, because they can not be retrieved by the the_post(). Pods Pages handles the URL mapping necessary to create pages to display the ACT's content and provide a way to set the title for the page.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "advanced","using-pods-pages"

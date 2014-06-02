@@ -2,7 +2,7 @@
 {
     "title": "SEO For Pods Advanced Content Types",
     "excerpt": "Pods Advanced Content Types (ACT) do not work automatically with Yoast's WordPress SEO or any other SEO plugin since they are not WordPress content types. Custom Post Types on the other hand do not share these issues. In this tutorial you will learn search engine optimization for Pods Advanced Content Types, including how to add your ACT to an XML Site Map and generateMeta tags--such as title and description--and Open Graph tags using Pods Pages precode.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
             "advanced","using-pods-pages"

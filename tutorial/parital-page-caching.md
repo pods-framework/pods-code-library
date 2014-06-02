@@ -2,7 +2,7 @@
 {
     "title": "Partial Page Caching and Smart Template Parts with Pods",
     "excerpt": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
             "tutorial_type": [
                 "advanced","using-pods-in-themes"

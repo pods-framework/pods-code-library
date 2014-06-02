@@ -2,7 +2,7 @@
 {
     "title": "Choosing Pods Advanced Content Types and Pods Pages",
     "excerpt": "Information about when to use, and when not to use Pods Advanced Content Types.",
-    "author": "Josh Pollock",
+    "author": "josh412",
     "termSlugs": {
             "tutorial_type": [
                 "getting-started","choosing-content-types","using-pods-pages"
