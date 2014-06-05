@@ -18,7 +18,7 @@ function slug_num_not_zero($pieces, $is_new_item) {
 	}
 	else {
 		//if not throw an error.
-		wp_die( 'You shall not pass!');
+		pods_error( 'You shall not pass!');
 	}
 
 }
