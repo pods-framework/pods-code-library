@@ -1,7 +1,8 @@
 <script>
 {
     "title": "Creating Pods Plugins",
-    "excerpt": "Creating Pods plugins is a great way to either add custom functionality to your Pods-powered site or to contribute a new feature for all Pods users to take advantage of."
+    "excerpt": "Creating Pods plugins is a great way to either add custom functionality to your Pods-powered site or to contribute a new feature for all Pods users to take advantage of.",
+
     "author": "josh412",
     "termSlugs": {
         "tutorial_type": [

@@ -64,7 +64,7 @@ get_header(); ?>
 							if ( isset($temp)  ) {
 								echo $temp;
 							}
-							
+
 							?>
 						</div><!-- .entry-content -->
 					<?php endif; ?>
