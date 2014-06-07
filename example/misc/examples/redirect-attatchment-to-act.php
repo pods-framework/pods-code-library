@@ -2,7 +2,7 @@
 /**
  * Redirect image attachment page to ACT if attached to an ACT.
  *
- * For this to work, you must extend the media library post type, using meta storage and add a field to it called "act_permalink"
+ * For this to work, you must extend the media library post type, using meta storage and add a plain text field to it called "act_permalink"
  *
  * Also assumes a permalink structure of pod_name/permalink
  *
