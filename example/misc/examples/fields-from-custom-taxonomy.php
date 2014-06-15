@@ -17,6 +17,7 @@ foreach ( $terms as $term ) {
 }
 
 //build where clause to query by term_id(s)
+//Looping AND instead of using IN() is a workaround for https://github.com/pods-framework/pods/issues/1978
 $i = 0;
 foreach( $ids as $id ) {
 	if ( $i === 0 ) {
