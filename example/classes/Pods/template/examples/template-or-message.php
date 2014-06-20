@@ -7,6 +7,10 @@ $pods = pods( 'pod_name', $params );
 
 if ( $pods->total() > 0 ) {
 	while( $pods->fetch() )  {
+
+		//reset id
+		$pods->id = $pods->id();
+		
 		//get the template
 		$temp = $pods->template( 'name of template' );
 
