@@ -60,7 +60,29 @@ To embed lines of code from another GitHub repository, you would give the full p
 </code>
 
 #### Creating Links To External Tutorials
-@TODO
+To add a link to a post on an external site, you will need to create a file in the tutorials, just like with full-text tutorials. The only difference is that you will need to add a "link" field in the header script, with a link to the tutorial. You should also add a few lines about the tutorial in the body of the file, so users will know what the tutorial is about. There is no need to add a link in that text to the article, as the link will be outputted automatically.
+
+Here is an example of a header script for a link post:
+
+```no-highlight
+<script>
+{
+    "title": "Creating Embedded Video Players From Custom Fields",
+    "excerpt": "Learn how to take a link to a video directly from a Pods generated custom field and use wp_oembed_get() to display the video in an embedded video player anywhere in your theme.",
+    "author": "lindsayanng",
+    "link": "http://webdesignforidiots.net/2014/01/pulling-a-video-from-a-posts-content-and-displaying-it/",
+    "termSlugs": {
+        "tutorial_type": [
+            "adding-custom-fields", "beginner", "media-handling-with-pods",
+        ]
+    },
+    "customFields: [
+    {"key":"_yoast_wpseo_title", "value": "Creating Embedded Video Players From Custom Fields - Pods Framework"},
+    {"key":"_yoast_wpseo_metadesc", "value": "Learn to use a Pods field and wp_oembed_get() to display an embedded video player anywhere in your WordPress theme."}
+    ]
+}
+</script>
+```
 
 ## Code Library Submission Instructions
 ### Location For Code Examples
