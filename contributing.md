@@ -31,14 +31,27 @@ All tutorials, whether they are single post, or a multi-post series must have a 
 All posts should include a header with the title, excerpt, author and if it is a part of a multi-part series, the order of the post in the series. The order for multi-part tutorial series is set using the "menu_order" field. This field should be omitted for parent posts. For example:
 
 ```no-highlight
-<script>{
-    "title": "Using Pods post_save Actions",
-    "excerpt": "",
-    "menu_order": "3",
-    "author": Josh Pollock
-    }
+<script>
+{
+    "title": "SEO For Pods Advanced Content Types",
+    "excerpt": "Pods Advanced Content Types (ACT) do not work automatically with Yoast's WordPress SEO or any other SEO plugin since they are not WordPress content types. Custom Post Types on the other hand do not share these issues. In this tutorial you will learn search engine optimization for Pods Advanced Content Types, including how to add your ACT to an XML Site Map and generateMeta tags--such as title and description--and Open Graph tags using Pods Pages precode.",
+    "author": "josh412",
+    "termSlugs": {
+        "tutorial_type": [
+            "advanced","using-pods-pages"
+        ]
+    },
+    "customFields: [
+        {"key":"_yoast_wpseo_title", "value": "Partial Page Caching and Smart Template Parts - Pods Framework"},
+        {"key":"_yoast_wpseo_metadesc", "value": "Search Engine Optimization (SEO) for Pods Advanced Content Types. Covering: XML Site Maps, Meta tags--such as title and description--and Open Graph tags."}
+        ]
+}
 </script>
 ```
+
+In this example you can see that the primary author of the post is set using Pods.io username. Also, the tutorial is categorized using the "tutorial_type" taxonomy, which only accept certain terms as defined in [taxonomies.json](https://github.com/pods-framework/pods-code-library/blob/master/taxonomies.json). Also SEO title and description are set in the customFields array using the keys "_yoast_wpseo_title" and "_yoast_wpseo_metadesc".
+
+While this may seem complicated, remember that you do not need to be perfect. All submissions will be validated automatically and if needed any errors will be fixed by a member of the Pods team before including. Just like any pull request, we ask that you do your best, but you have the peice of mind of knowing that you can't break anything.
 
 A tutorial post can embed content from anywhere in the code library, for example a code example, or from another GitHub repo, for example the source code of Pods or a Pods plugin. In both cases you use the three ticks, followed by the language method from the markdown language to set syntax highlighting around a `@partial()` statement.
 
