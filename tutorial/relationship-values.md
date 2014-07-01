@@ -13,6 +13,7 @@
     {"key":"_yoast_wpseo_metadesc", "value": "Relationship fields can allow one post type (custom or not) to become a value for a field in another post type. The relationship can even be bi-directional.."}
     ]
 }
+</script>
 <a href="http://pods.io/wp-content/blogs.dir/2224/files/2013/04/relationship-multi-checkboxes.png"><img class="alignleft size-medium wp-image-1911" src="http://pods.io/wp-content/blogs.dir/2224/files/2013/04/relationship-multi-checkboxes-300x66.png" alt="relationship-multi-checkboxes" width="300" height="66" /></a>In this quick tutorial I will show you how to get values from a Pods' <a href="http://pods.io/docs/learn/field-types/relationship/">relationship</a> field, or a bi-directional relationship field between two different post types. There are many possible types of relationship fields, but one of the most common and powerful uses for them is to relate one type of post type to another. With these types of relationships posts in one post type (custom or not) become values for a field in another post type.
 
 <strong>UPDATE: March 19, 2014- The code in this article assumes the related post is a custom post type, not an Advanced Content Type. I have added a new section and example code for use when the related post is an Advanced Content Type at the end of this article.</strong>

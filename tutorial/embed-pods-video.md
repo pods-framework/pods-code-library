@@ -6,7 +6,7 @@
     "link": "http://webdesignforidiots.net/2014/01/pulling-a-video-from-a-posts-content-and-displaying-it/",
     "termSlugs": {
         "tutorial_type": [
-            "adding-custom-fields", "beginner", "media-handling-with-pods",
+            "adding-custom-fields", "beginner", "media-handling-with-pods"
         ]
     },
     "customFields": [

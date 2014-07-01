@@ -13,6 +13,7 @@
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to add two custom fields to the native WordPress post object and insert the custom field data into the post content."}
     ]
 }
+</script>
 
 ### Goal
 Add two custom fields to the native WordPress post object and insert the custom field data into the post content. This screenshot shows where we want to end up:

@@ -75,7 +75,7 @@ Since only certain terms from the tutorial_type taxonomy are shown, I didn't wan
 That approach works, but it creates a whole new workflow. What I did was use WordPress' "pre_insert_term" filter to throw an error whenever a new term is added to the taxonomy. Here is the filter and callback function for how I did it:
 
 ```php
-@partial(/example/misc/examples/non-new-terms.php)
+@partial(/example/misc/examples/no-new-terms.php)
 ```
 
 <h5>Using Custom Rewrite Slugs</h5>

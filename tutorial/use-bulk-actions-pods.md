@@ -14,4 +14,5 @@
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to build a Pods UI plugin to manipulate large amounts of information from the database with Pods bulk actions."}
     ]
 }
+</script>
 In this tutorial Kamil Grzegorczyk explains how to use bulk actions to manipulate large amounts of information in the database with minimal effort. His example is a a bulk action to delete items and he even includes complete code for the plugin he shows you how to build in this tutorial.

@@ -6,7 +6,7 @@
     "link": "http://webdesignforidiots.net/2013/04/pods-cpts-versus-acts-coding-for-them/",
     "termSlugs": {
         "tutorial_type": [
-            "getting-started", "beginner", "using-pods-in-themes", "using-pods-pages",
+            "getting-started", "beginner", "using-pods-in-themes", "using-pods-pages"
         ]
     },
     "customFields": [

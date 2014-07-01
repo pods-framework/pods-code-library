@@ -1,7 +1,7 @@
 <script>
 {
     "title": "Pods pre_save and post_save Hooks",
-    "excerpt": "A series of posts explaining Pods pre and post save hooks."
+    "excerpt": "A series of posts explaining Pods pre and post save hooks.",
     "author": "josh412",
     "termSlugs": {
         "tutorial_type": [

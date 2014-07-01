@@ -5,7 +5,7 @@
     "author": "josh412",
     "termSlugs": {
         "tutorial_type": [
-            "beginner","adding-custom-fields","extending-existing-content-types","using-pods-in-themes",
+            "beginner","adding-custom-fields","extending-existing-content-types","using-pods-in-themes"
         ]
     },
     "customFields": [

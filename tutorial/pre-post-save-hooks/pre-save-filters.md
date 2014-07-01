@@ -3,7 +3,7 @@
     "title": "Using Pods pre_save Filters",
     "excerpt": "When to use Pods pre_save filters and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks.",
     "menu_order": "2",
-    "author": Josh Pollock,
+    "author": "Josh Pollock",
     "termSlugs": {
             "tutorial_type": [
                 "advanced"

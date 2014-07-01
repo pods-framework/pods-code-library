@@ -3,7 +3,7 @@
    "title": "Using Pods post_save Actions",
    "excerpt": "When to use Pods post_save actions and examples of how they can be used. Part of a series of posts explaining Pods pre and post save hooks.",
    "menu_order": "3",
-   "author": Josh Pollock,
+   "author": "Josh Pollock",
    "termSlugs": {
                "tutorial_type": [
                    "advanced"
