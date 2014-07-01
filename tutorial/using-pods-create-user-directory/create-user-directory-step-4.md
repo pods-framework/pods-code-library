@@ -9,7 +9,7 @@
             "beginner","adding-custom-fields","extending-existing-content-types","using-pods-in-themes"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Using Author.php To Show Custom Fields - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Showing fields from an extended users Pod in a theme's author.php template. Part of a series on creating a user directory."}
     ]

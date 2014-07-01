@@ -8,7 +8,7 @@
             "advanced","using-pods-pages"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Partial Page Caching and Smart Template Parts - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Search Engine Optimization (SEO) for Pods Advanced Content Types. Covering: XML Site Maps, Meta tags--such as title and description--and Open Graph tags."}
         ]

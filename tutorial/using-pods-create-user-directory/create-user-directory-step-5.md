@@ -9,7 +9,7 @@
             "beginner","adding-custom-fields","extending-existing-content-types","using-pods-in-themes"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Creating A List Of Users and Profile Page - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Listing users and showing custom fields added with Pods. Part of a series on creating a user directory."}
     ]

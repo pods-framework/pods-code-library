@@ -8,7 +8,7 @@
                 "advanced","using-pods-in-themes"
             ]
         },
-        "customFields: [
+        "customFields": [
             {"key":"_yoast_wpseo_title", "value": "Partial Page Caching and Smart Template Parts - Pods Framework"},
             {"key":"_yoast_wpseo_metadesc", "value": "Learn to use pods_view for smart template loading and as a caching solution where regular WordPress page caching solutions are not practical."}
         ]

@@ -8,7 +8,7 @@
             "advanced","using-pods-in-themes"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Pods Rewrite Options For Post Types and Taxonomies - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Learn how URL rewrite rules settings in Pods to customize the URLs for your custom post types and custom taxonomies in order to fit your needs."}
     ]

@@ -9,7 +9,7 @@
             "advanced",
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Showing Future Events With Pods - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to use Pods to create an "events" post type and show only future events in your WordPress site."}
     ]

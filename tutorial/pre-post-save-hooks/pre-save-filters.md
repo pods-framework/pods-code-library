@@ -9,7 +9,7 @@
                 "advanced"
             ]
         },
-        "customFields: [
+        "customFields": [
             {"key":"_yoast_wpseo_title", "value": "Using Pods pre_save Filters - Pods Framework"},
             {"key":"_yoast_wpseo_metadesc", "value": "When to use Pods pre_save filters and examples of how they can be used."}
         ]

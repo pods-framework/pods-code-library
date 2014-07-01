@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Simple Pods UI Plugin Part 1 - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn to build a Pods UI plugin to manage a books site, complete with bidirectional relationships between books, authors and genre."}
     ]

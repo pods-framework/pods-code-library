@@ -8,7 +8,7 @@
             "advanced","using-pods-pages"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Using Pods Pages With Advanced Content Types - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to use Pods pages to display items from a Pods Advanced Content Type."}
     ]

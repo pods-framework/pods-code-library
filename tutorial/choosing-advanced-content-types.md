@@ -8,7 +8,7 @@
                 "getting-started","choosing-content-types","using-pods-pages"
             ]
         },
-        "customFields: [
+        "customFields": [
             {"key":"_yoast_wpseo_title", "value": "Choosing Pods Advanced Content Types - Pods Framework"},
             {"key":"_yoast_wpseo_metadesc", "value": "Information about when to use, and when not to use Pods Advanced Content Types."}
         ]

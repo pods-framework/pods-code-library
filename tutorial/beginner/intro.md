@@ -1,7 +1,7 @@
 <script>{
     "title": "First steps through Pods",
     "excerpt": "Basic tutorial on using pods",
-    "author": Josh Pollock
+    "author": "Josh Pollock"
     }
 </script>
 

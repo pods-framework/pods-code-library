@@ -8,7 +8,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Pods pre_save and post_save Hooks - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "A series of posts explaining Pods pre and post save hooks."}
     ]

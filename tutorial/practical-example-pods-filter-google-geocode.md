@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Practical Example of Pods Filter- Google Geocode- Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn to automatically geocode an address into Google Maps coordinates using the Pods pre_save filter."}
     ]

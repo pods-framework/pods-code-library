@@ -9,7 +9,7 @@
             "beginner","getting-started","adding-custom-fields","extending-existing-content-types"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Add Fields To Users - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Learn how to add custom fields to a Pod, in this example an extended user Pod. Part of a series on creating a user directory."}
     ]

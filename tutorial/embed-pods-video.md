@@ -9,7 +9,7 @@
             "adding-custom-fields", "beginner", "media-handling-with-pods",
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Creating Embedded Video Players From Custom Fields - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn to use a Pods field and wp_oembed_get() to display an embedded video player anywhere in your WordPress theme."}
     ]

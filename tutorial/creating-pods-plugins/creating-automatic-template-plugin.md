@@ -9,7 +9,7 @@
             "advanced", "using-pods-templates"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Using The Pods Extend Starter Plugin - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Creating a Pods plugin is a great way to contribute to the Pods project as well as to add functionality to your Pods-powered site."}
     ]

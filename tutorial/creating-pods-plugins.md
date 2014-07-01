@@ -9,7 +9,7 @@
             "advanced", "beginner"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Creating Pods Plugins- Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Learn to create Pods plugins that add custom functionality to your Pods-powered site or contribute a new feature for all Pods users to take advantage of."}
     ]

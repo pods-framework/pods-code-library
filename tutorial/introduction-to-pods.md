@@ -9,7 +9,7 @@
             "adding-custom-fields", "beginner", "using-pods-templates",
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Introduction to Pods: WordPress as a CMS - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "A simple, easy to follow introduction to creating custom post types in Pods and using Pods Templates and short codes to display them."}
     ]

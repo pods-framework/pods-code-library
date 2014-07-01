@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Short Introduction to Pods 2 and New Field Input Filters - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn about using field input filters with the Pods- Custom Content Types and Fields WordPress plugin."}
     ]

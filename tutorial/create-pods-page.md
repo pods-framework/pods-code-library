@@ -9,7 +9,7 @@
             "advanced", "using-pods-pages"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "How To Create A Pods Page - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "How to create a Pods Page and associate it with a WordPress page template."}
     ]

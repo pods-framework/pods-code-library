@@ -9,7 +9,7 @@
             "beginner","adding-custom-fields","extending-existing-content-types","using-pods-in-themes"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Creating A User Directory: Additional Options - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Additional options including access restrictions when creating a user directory with Pods. Part of a series."}
     ]

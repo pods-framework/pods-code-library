@@ -8,7 +8,7 @@
             "beginner"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Pods Single Field and Template Shortcodes In Posts - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to add two custom fields to the native WordPress post object and insert the custom field data into the post content."}
     ]

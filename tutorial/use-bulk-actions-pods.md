@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "How To Use Bulk Actions In Pods - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to build a Pods UI plugin to manipulate large amounts of information from the database with Pods bulk actions."}
     ]

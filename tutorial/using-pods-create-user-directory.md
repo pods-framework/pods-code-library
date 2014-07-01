@@ -8,7 +8,7 @@
             "beginner","adding-custom-fields","extending-existing-content-types","using-pods-in-themes",
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Using Pods To Create A User Directory - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "In this tutorial series you will learn how to use Pods to make a user directory by adding new fields to the user profiles and outputting them in your theme."}
     ]

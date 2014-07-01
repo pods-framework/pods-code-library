@@ -8,7 +8,7 @@
             "beginner"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Setting Pods Custom Menu Icons - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn to set custom menu icons for Pods content types using the Dashicon font or any image of your choice."}
     ]

@@ -10,7 +10,7 @@
             "using-pods-pages", "using-pods-templates"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Pods – Pages and Templates and More Pages OH MY!- Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn the difference between Pods Templates, Pods Pages and WordPress pages and look at example code for adding a Pods page template to your theme."}
     ]

@@ -9,7 +9,7 @@
             "getting-started", "beginner", "using-pods-in-themes", "using-pods-pages",
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Adding A New Field And Displaying It In A Template - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "The difference between custom post types and advanced content types and different approaches to coding for each."}
     ]

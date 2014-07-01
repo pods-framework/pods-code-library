@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Pods Actions and Filters - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn practical uses for Pods actions and Filters such as setting values for hidden fields, validating data and more."}
     ]

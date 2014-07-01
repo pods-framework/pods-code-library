@@ -8,7 +8,7 @@
             "advanced","using-pods-pages","using-pods-templates"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Get Values From A Relationship Field - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Relationship fields can allow one post type (custom or not) to become a value for a field in another post type. The relationship can even be bi-directional.."}
     ]

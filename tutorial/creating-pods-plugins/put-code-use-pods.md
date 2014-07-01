@@ -9,7 +9,7 @@
             "beginner"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Where Should I Put Code For Use With Pods? - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Where to safely add custom code for extending the functionality of Pods on your site."}
     ]

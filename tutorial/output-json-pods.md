@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Output JSON with Pods - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "How to use Pods Page to code JSON endpoints for a Frontend app and how to output Pods data as JSON for use by client-side Javascripts."}
     ]

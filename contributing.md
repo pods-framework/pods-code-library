@@ -41,7 +41,7 @@ All posts should include a header with the title, excerpt, author and if it is a
             "advanced","using-pods-pages"
         ]
     },
-    "customFields: [
+    "customFields": [
         {"key":"_yoast_wpseo_title", "value": "Partial Page Caching and Smart Template Parts - Pods Framework"},
         {"key":"_yoast_wpseo_metadesc", "value": "Search Engine Optimization (SEO) for Pods Advanced Content Types. Covering: XML Site Maps, Meta tags--such as title and description--and Open Graph tags."}
         ]
@@ -89,7 +89,7 @@ Here is an example of a header script for a link post:
             "adding-custom-fields", "beginner", "media-handling-with-pods",
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Creating Embedded Video Players From Custom Fields - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn to use a Pods field and wp_oembed_get() to display an embedded video player anywhere in your WordPress theme."}
     ]

@@ -9,7 +9,7 @@
             "advanced"
         ]
     },
-    "customFields: [
+    "customFields": [
     {"key":"_yoast_wpseo_title", "value": "Use Pods Image Field As Thumbnail - Pods Framework"},
     {"key":"_yoast_wpseo_metadesc", "value": "Learn how to use Pods image fields as the thumbnail for a post in your WordPress site."}
     ]
