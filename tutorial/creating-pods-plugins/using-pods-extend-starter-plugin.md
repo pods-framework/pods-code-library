@@ -14,6 +14,7 @@
         {"key":"_yoast_wpseo_metadesc", "value": "Creating a Pods plugin is a great way to contribute to the Pods project as well as to add functionality to your Pods-powered site."}
     ]
 }
+</script>
 
 Creating a Pods plugin is a great way to contribute to the Pods project as well as to add functionality to your Pods-powered site. On our <a href="http://pods.io/plugins/" target="_blank">plugins page</a> there are many different types of plugins listed. There are three types of Pods Plugins that can be created:
 <ul>

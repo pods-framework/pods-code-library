@@ -14,6 +14,7 @@
         {"key":"_yoast_wpseo_metadesc", "value": "Creating a Pods plugin is a great way to contribute to the Pods project as well as to add functionality to your Pods-powered site."}
     ]
 }
+</script>
 
 In this tutorial I am going to walk you through the creation of the automatic template display plugin that I created using <a title="Pods Extend starter plugin GitHub repository" href="https://github.com/pods-framework/pods-extend" target="_blank">Pods Extend</a>. The plugin <a title="Plugin GitHub repository" href="https://github.com/pods-framework/pods-frontier-auto-template" target="_blank">Pods Frontier Auto Template</a> adds a tab in the Pods editor to all custom post type and custom taxonomy Pods for the plugin's settings. Then, based on those settings, it automatically outputs a template when that Pod is being displayed.
 

@@ -14,6 +14,8 @@
         {"key":"_yoast_wpseo_metadesc", "value": "Where to safely add custom code for extending the functionality of Pods on your site."}
     ]
 }
+</script>
+
 When you need to add custom code for extending the functionality of Pods on your site, where to add the code and how to do so safely are important questions to consider. I say safely because any code for use with Pods will use functions and classes from the core Pods plugin itself. As a result, your custom code can cause fatal errors if Pods becomes deactivated or if it is loaded before Pods. While we now have a full featured Pods starter plugin, <a title="Pods starter plugin GitHub repository" href="https://github.com/pods-framework/pods-extend" target="_blank">Pods Extend</a>, it is overkill for many cases.
 <h3>Why Not Use Theme Functions File?</h3>
 Many people add their Pods code to the active theme's functions.php file. While this works, it has several drawbacks. Putting site-specific code in your functions.php file keeps you from easily switching themes without losing essential site-functionality. While you may be using a theme that was custom designed for the site, and therefore assume it will never change, you may need to change to the default theme in the future for troubleshooting reasons. In addition, given changing trends in web design and the evolving nature of the Pods and WordPress code, a theme that looks and functions wonderfully by today's standards may not meet the design aesthetics three years from now or work properly with the current version of WordPress or Pods.
