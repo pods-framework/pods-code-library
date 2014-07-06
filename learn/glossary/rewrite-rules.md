@@ -1,0 +1,1 @@
+The method used for rewriting your URLs on the fly. Makes use of Apache’s mod_rewrite engine. By default, ?post_type=popcorn is the same as /popcorn. If you’re an advanced user you can set your own rewrite rules.

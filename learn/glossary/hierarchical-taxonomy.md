@@ -1,0 +1,1 @@
+A hierarchical taxonomy organises your content in a hierarchical manner, creating a "parent/child" relationship between terms of the taxonomy. The default WordPress taxonomy Categories is an example of a hierarchical taxonomy.
