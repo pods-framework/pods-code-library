@@ -33,7 +33,7 @@ Testing your assumptions about whether adding selects will improve your site loa
 
 ```php
 add_action( 'shutdown', function() {
-echo get_num_queries().' queries in '.timer_stop(0,3).' seconds.';
+	printf( '%d queries in %s seconds', get_num_queries(), timer_stop( 0, 3 ) );
 }, 99 );
 ```
 
