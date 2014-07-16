@@ -17,7 +17,7 @@
 </script>
 Each of the pre_save filters and post_save actions has a parameter `$pieces`, which is an array contains the values being saved as well as additional information about the Pod. In this article, I will walk you though the contents of this array, key by key.
 
-Keep in mind that when using pre_save filters, in order for any saving to happen, `$peices` must be returned. If not saving will be prevented. This is something you may choose to do intentionlly.
+Keep in mind that when using pre_save filters, in order for any saving to happen, `$pieces` must be returned. If not saving will be prevented. This is something you may choose to do intentionally.
 
 
 ## `$pieces[ 'fields' ]`
@@ -44,7 +44,7 @@ As noted above, when saving via the API, only the specific fields being saved wi
 An array of fields for a WordPress Object, such as the users object[.
 
 ## `$pieces[ 'custom_fields' ]`
-These are custom meta fields for content type Pods that are not added by Pod. Their values <em>can not</em> be changed by Pods.
+These are custom meta fields for content type Pods that are not added by Pods. Their values <em>can not</em> be changed by Pods.
 
 ## `$pieces[ 'custom_data' ]`
 An array of custom field values being saved, you can change this to add other custom fields to the saving process. Only applies to meta-based content types.
