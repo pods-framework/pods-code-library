@@ -59,7 +59,7 @@ $current_user = new WP_User ( $current_user_id );
 In previous examples we were getting all of the meta fields for a user at once, which made sense since were using almost all of them. This is overkill if you only need the value of one field. If we need to get a meta value for a post's author we can use <a title="WordPress Codex: get_the_author_meta" href="http://codex.wordpress.org/Function_Reference/get_the_author_meta" target="_blank">get_the_author_meta</a> to show a field's value. Inside the loop we don't even have to specify an ID. When we are listing the value for a field for several users it is better to use <a title="WordPress Codex: get_user_meta" href="http://codex.wordpress.org/Function_Reference/get_user_meta" target="_blank">get_user_meta</a>, which is a very similar function. Here are examples of both functions in action:
 
 ```php
-partial(/example/misc/examples/pods-user-fields-twitter.php)
+@partial(/example/misc/examples/pods-user-fields-twitter.php)
 ```
 
 The first function uses <a title="WordPress Codex: get_the_author_meta" href="http://codex.wordpress.org/Function_Reference/get_the_author_meta" target="_blank">get_the_author_meta</a> to get the author's twitter profile url and uses it to create a Twitter follow button. This function must be used in the loop and only works for users who are post authors. The second example can be used outside of the loop and for any registered user. It displays a link to their Twitter profile. This function can be easily adapted to show any type of field and can be used inside of other functions as needed.
