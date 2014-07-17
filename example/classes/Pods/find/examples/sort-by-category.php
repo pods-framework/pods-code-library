@@ -25,18 +25,20 @@ if ( $pods->total() > 0 ) {
 	}
 }
 
-//output each category
-foreach ( $categories as $category_name => $category ) {
-
-	//output the categroy name
-	echo $category_name;
-
-	//loop through items in category
-	foreach ( $category as $post ) {
-
-		//output title
-		echo $post[ 'title' ];
-		//get permalink with get_permalink( $post[ 'ID' ];
+if ( isset( $categories ) && is_array( $categories  ) ) {
+	//output each category
+	foreach ( $categories as $category_name => $category ) {
+	
+		//output the categroy name
+		echo $category_name;
+	
+		//loop through items in category
+		foreach ( $category as $post ) {
+	
+			//output title
+			echo $post[ 'title' ];
+			//get permalink with get_permalink( $post[ 'ID' ];
+		}
+	
 	}
-
 }
