@@ -8,7 +8,7 @@ $pods = pods( 'pod_name', array( 'limit' => -1 ) );
 if ( $pods->total() > 0 ) {
 	while ( $pods->fetch() ) {
 		//get post ID
-		$id = $pods->ID;
+		$id = $pods->id();
 
 		//get categories
 		$category = get_the_category( $id );
