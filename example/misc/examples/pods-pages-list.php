@@ -19,7 +19,7 @@ get_header();
 			//setup Pod object presuming permalink structure of example.com/pod-name/item-name
 
 			//get current pod name
-			$pod_name = pods_( 0, 'url');
+			$pod_name = pods_v( 0, 'url');
 
 			//set up parameters for Pods object
 			$params = array(

@@ -16,7 +16,7 @@ get_header();
 			$slug = pods_v( 'last', 'url' );
 
 			//get current pod name
-			$pod_name = pods_( 0, 'url');
+			$pod_name = pods_v( 0, 'url');
 
 			//get pods object
 			$pods = pods( $pod_name, $slug );
