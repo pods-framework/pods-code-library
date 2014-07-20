@@ -17,7 +17,7 @@ if ( $pods->total() > 0 ) {
 		$category = $category[ 0 ]->cat_name;
 
 		//put ID and post into categories array
-		$categories[ $category ] = array (
+		$categories[ $category ][] = array ( = array (
 			'ID'    => $id,
 			'title' => $pods->display( 'post_title' ),
 		);
@@ -33,7 +33,7 @@ if ( isset( $categories ) && is_array( $categories  ) ) {
 		echo $category_name;
 	
 		//loop through items in category
-		foreach ( $category as $post ) {
+		foreach ( $categories[$category_name] as $post ) {
 	
 			//output title
 			echo $post[ 'title' ];
