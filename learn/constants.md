@@ -1,7 +1,8 @@
 Pods Constants
 All defaults are as of 2.4.3
 
-* PODS_VERSION - The version number of the current version of Pods
+* PODS_VERSION - The version number of the current version of Pods.
+* PODS_DB_VERSION - The version of the Pods database configuration. Currently '2.3.5', if is less than current version, will trigger databse update.
 * PODS_DIR - Default is 'plugin_dir_path( __FILE__ )'. The directory path of the directory Pods is installed in.
 * PODS_URL - Default is 'plugin_dir_url( __FILE__ )'. The URL of the directory Pods is installed in.
 * PODS_GITHUB_UPDATE - Default is false. When true, Pods can be updated to the latest commit on the branch specified in PODS_GITHUB_BRANCH, from the Pods admin.
@@ -9,18 +10,16 @@ All defaults are as of 2.4.3
 * PODS_WP_VERSION_MINIMUM - Default is '3.4'. The minimum version of WordPress that can be used with Pods. Redefining this is strongly discouraged.
 * PODS_PHP_VERSION_MINIMUM - Default is '5.2.4'. The minimum version of PHP that can be used with Pods. Redefining this is strongly discouraged.
 * PODS_MYSQL_VERSION_MINIMUM - Default is '5.0'. The minimum version of MySQL that can be used with Pods. Redefining this is strongly discouraged.
-* PODS_SLUG
-* POD_MEDIA
-* PODS_GLOBAL_POD_PAGINATION
-* PODS_GLOBAL_POD_SEARCH
+* PODS_SLUG - Default is 'plugin_basename( __FILE__ )'. The slug for the plugin.
+* PODS_MEDIA - If false, Pods media functions will not be included.
+* PODS_GLOBAL_POD_PAGINATION - If false, globally disables pagination from Pods class. Can be overridden in Pods::find() params.
+* PODS_GLOBAL_POD_SEARCH - If false,  globally disables search in Pods class. Can be overridden in Pods::find() params.
 * PODS_DISABLE_CONTENT_MENU
 * PODS_DISABLE_ADMIN_MENU - Hides the Pods admin menu for users of any role. Note: You can set access to the Pods admin menu by user level using the Admin Access Role setting.
-* PODS_SEARCH_STRICT
-* PODS_FIELD_STRICT
-* PODS_DISABLE_EVAL
-* PODS_LIGHT - Disables all components.
-* PODS_TABLELESS
-* PODS_DB_VERSION
+* PODS_FIELD_STRICT - If false names for Pods or fields reserved for internal can be used for new Pods or fields. Use with caution.
+* PODS_DISABLE_EVAL - If true, Pods will not allow PHP code added in the admin interface, for example, the Pods Template editor, to be executed.
+* PODS_LIGHT - Disables all Pods components.
+* PODS_TABLELESS - If true, enables tableless mode. If table-based storage is turned off, no additional database tables, such as wp_podsrel will be utilized (or even created if tableless mode is on during activation
 * PODS_ALLOW_FULL_META
 * PODS_REMOTE_VIEWS
 * PODS_DISABLE_FILE_UPLOAD - Disables the ability to upload any files via Pods.
@@ -33,7 +32,6 @@ All defaults are as of 2.4.3
 * PODS_DISABLE_BODY_CLASSES
 * PODS_DISABLE_DYNAMIC_TEMPLATE
 * PODS_DEVELOPER
-* PODS_TABLELESS
 * PODS_STRICT
 * PODS_API_CACHE
 * PODS_SHORTCODE_ALLOW_EVALUATE_TAGS
