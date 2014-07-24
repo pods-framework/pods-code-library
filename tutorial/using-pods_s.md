@@ -23,11 +23,36 @@ pods_s is forked from _s (underscores) by Automattic and like _s, it has very mi
 ### How Pods Objects Are Built
 
 ##### Using 'pods()' Without Setting Content Type
+Since Pods 2.4, Pods objects can be built without specifying the Pod name in `pods()`. When the name is not set, Pods will automatically detect the current content type being displayed and attempt to build a Pods object using the name of that content type. Since the current content type may not be a Pod, in pods_s `$strict` the third parameter of `pods()`, is set to true. In strict mode `pods()` will return false when a Pods object can not be built.
+
+Because of the possibility that the variable the Pods object is saved in may be false, it is important to test that it is not before using it. In pods_s, each main template has a Pods object available in the variable `$pods`. Before using `$pods` always check that it is not false with `if ( $pods )` or similar test to avoid calling methods of the Pods class on a non-object and experiencing errors.
 
 ##### Getting Items Based On WordPress Pagination
+Since, on non-single item views the Pods object is used in parallel with the WordPress loop, it makes sense to get only the items that will be used on the current page of results. This is accomplished by using the 'limit' and 'page' parameters of `Pods::find()`. Both of these options are added to the `Pods::find()` params array using the function [`pods_s_current_items_params()`](https://github.com/pods-framework/pods_s/blob/a0bb7f1ca7191c75430199d94821588eb6cd2b47/inc/pods_s.php#L289-L356), which also sets the cache arguments, which is discussed in the next section.
+
+In order to get the same number of items, per page, the 'limit' parameter is set equal to the WordPress option 'posts_per_page', using `get_option'. Of course, we also need to make sure, if we are in paged results that we get the right set of results. [`pods_s_current_items_params()`](https://github.com/pods-framework/pods_s/blob/a0bb7f1ca7191c75430199d94821588eb6cd2b47/inc/pods_s.php#L289-L356) also determines the current set of results, based on the 'paged' query_var, using `get_query_var( 'paged' )`.
 
 ##### Caching Pods Objects
 
+[`pods_s_current_items_params()`](https://github.com/pods-framework/pods_s/blob/a0bb7f1ca7191c75430199d94821588eb6cd2b47/inc/pods_s.php#L289-L356) also is used to set the cache mode and expiration for your Pods objects. This function sets the parameters 'cache_mode' and 'expires' which are required to cache Pods objects. Here is a general example of how to set these parameters:
+
+```php
+partial(/example/classes/Pods/find/examples/cache-query.php)
+```
+
+In pods_s, the two cache parameters are set using the functions `pods_s_cache_mode()` and `pods_s_cache_expires()`. For more information on these functions, see "Changing Cache Mode and Cache Expiration" below. You can also change cache mode, only for Pods object cache, without affecting the partial page caching system discussed below using the 'pods_s_current_items_params'. For example to prevent caching for the Pod 'trophies' you could use this filter and callback:
+
+```php
+add_filter( 'pods_s_current_items_params', 'slug_dont_cache_trophies', 10, 3 );
+function slug_dont_cache_trophies( $params, $content_type, $pod ) {
+    if ( $pod === 'trophies' ) {
+        $params['expires'] = 0;
+    }
+
+    return $params;
+
+}
+```
 
 ### Templating Options
 If you are using the theme, the first thing you need to do is decide if you want to use Pods templates to output your content, or create template parts for your output. I will detail each approach separately below.
@@ -134,7 +159,7 @@ In addition, both filters use the filter argument `$name` to set the name of the
 ### Partial Page Caching
 One of the cooler, yet most often overlooked features of Pods is its partial page caching system. I wrote in detail about [Pods' partial page caching capabilities here](http://pods.io/tutorials/partial-page-caching-smart-template-parts-pods/). Partial page caching, also known as fragment caching allows you to cache individual parts of your page separately.
 
-Remember that these items can be cleared from the cache simply by clicking the "Clear Cache" button in Pods Settings. The cache will automatically be cleared whenever any Pods are updated or when Pods settings are changed.
+Remember that these items can be cleared from the cache simply by clicking the "Clear Cache" button in Pods Settings. The cache will automatically be cleared whenever any Pods are updated or when Pods settings are changed. The cache mode, and cache expiration are set using the functions `pods_s_cache_mode()` and `pods_s_cache_expires()`. For more information on these functions, see "Changing Cache Mode and Cache Expiration" below.
 
 ##### Header, Footer & Sidebar
 
@@ -151,4 +176,30 @@ In `pods_s_get_template_part()` once we have the path to to the template part, t
 
 ```php
 @partial( https://github.com/pods-framework/pods_s/blob/5d2805893894f94f9eed6c47fb012c362afe4166/inc/pods_s.php#L422-L479 )
+```
+### Changing Cache Mode and Cache Expiration
+Both the Pods object caching and the partial page caching in pods_s rely on the functions `pods_s_cache_mode()` and `pods_s_cache_expires()` to set the cache_mode and maximum time to store the item in the cache. Pods can use the object cache, the transient cache or the site transient cache for multisite.
+
+The cache mode and expiration can be changed in one of two ways, using an option and a filter. These options will not be used if the filter is being used. Both settings have an option 'pods_s_cache_mode' and 'pods_s_cache_expires' that can be set to change the value of each of the values globally.
+
+The filters can be used to change these settings globally or conditionally. For example, this filter and callback would change the cache mode to transient globally.
+
+```php
+add_filter( 'pods_s_cache_mode', 'slug_use_transient_cache' );
+function slug_user_transient_cache( $cache_mode ) {
+    $cache_mode = 'transient';
+    return $cache_mode;
+
+}
+```
+
+This filter and callback, will change cache expiration to 0, which disables caching, only on single item views of a custom post type called 'sleeps':
+
+```php
+add_filter( 'pods_s_cache_expires', 'slug_dont_cache_sleeps' );
+function slug_dont_cache_sleeps( $expires ) {
+    $expires = '0';
+    return $expires;
+
+}
 ```
