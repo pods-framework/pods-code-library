@@ -20,22 +20,22 @@ All defaults are as of 2.4.3
 * PODS_DISABLE_EVAL - If true, Pods will not allow PHP code added in the admin interface, for example, the Pods Template editor, to be executed.
 * PODS_LIGHT - Disables all Pods components.
 * PODS_TABLELESS - If true, enables tableless mode. If table-based storage is turned off, no additional database tables, such as wp_podsrel will be utilized (or even created if tableless mode is on during activation
-* PODS_ALLOW_FULL_META
-* PODS_REMOTE_VIEWS
+* PODS_ALLOW_FULL_META - Set to false to prevent get_post_meta( $id ) interaction with Pods for meta storage Pods.
+* PODS_DISABLE_META - If true, disables output of meta information in header of Pods Pages.
 * PODS_DISABLE_FILE_UPLOAD - Disables the ability to upload any files via Pods.
-* PODS_UPLOAD_REQUIRE_LOGIN
+* PODS_UPLOAD_REQUIRE_LOGIN - If set to true, non-logged in users can upload files. Use with caution, can present security risks.
 * PODS_DISABLE_FILE_BROWSER - Disables access to the file browser when uploading files via Pods file fields.
 * PODS_FILES_REQUIRE_LOGIN - Defaults to true. When false, users who are NOT logged in may upload files via Pods file fields. Use this with caution.
 * PODS_DISABLE_POD_PAGE_CHECK - Disables the check that is run before a page loads to see if Pods Pages is being used.
 * PODS_DISABLE_VERSION_OUTPUT - Enables outputting the current Pods version in head of Pods Pages.
-* PODS_DISABLE_META
-* PODS_DISABLE_BODY_CLASSES
+* PODS_DISABLE_BODY_CLASSES - If false, skips Pods Pages body classes.
 * PODS_DISABLE_DYNAMIC_TEMPLATE
-* PODS_DEVELOPER
+* PODS_DEVELOPER - If true enables experimental and unfinished features.
 * PODS_STRICT
-* PODS_API_CACHE
-* PODS_SHORTCODE_ALLOW_EVALUATE_TAGS
-* PODS_SHORTCODE_ALLOW_SUB_SHORTCODES
+* PODS_API_CACHE - If true, disables Pods API cache.
+* PODS_SHORTCODE_ALLOW_EVALUATE_TAGS - If true, allows shortcodes to evaluate tags like magic tags, but through pods_v().
+* PODS_SHORTCODE_ALLOW_SUB_SHORTCODES - If true allows shortcodes to be called from within Pods Shortcodes.
+* PODS_DISABLE_SHORTCODE - If true, disables Pods shortcodes.
 * PODS_DISABLE_SHORTCODE_SQL - Prevents shortcodes from passing SQL that could potentially be used to used to compromise site security. When enabled, Pods shortcodes will ignore its "orderby", "where", "having", "groupby" and "select" arguments. Setting this constant to true is recommended if you are allowing untrusted users to create or edit posts.
 * PODS_SESSION_AUTO_START - Disables Session Auto Start.
 * PODS_PRELOAD_CONFIG_AFTER_FLUSH
