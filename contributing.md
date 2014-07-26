@@ -10,6 +10,8 @@ You can contribute to Pods documentation in one of three ways:
 
 * Writing a tutorial.
 
+<strong> Don't Worry About All The Details In This Section.</strong> We understand some of the details below are a little complex, but we want your contributions and can take care of the details.
+
 ### Adding To Our Code Library
 The code examples on our documentation site (coming soon) are generated from this repository. You can submit a new code example or propose a change to an existing example by submitting a pull request. Instructions on submitting a pull request via the GitHub web interface, as well as were to put the example are below. You can also clone or fork this repository like any other GitHub repository using the command line or a Git GUI client.
 
