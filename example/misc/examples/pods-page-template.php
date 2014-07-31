@@ -25,8 +25,8 @@ get_header();
 			<article>
 				<?php
 					//Output template of the same name as Pod, if such a template exists.
-					$temp = $pods->template($pod_name);
-					if ( isset($temp)  ) {
+					$temp = $pods->template( $pod_name );
+					if ( ! is_null( $temp )  ) {
 						echo $temp;
 					}
 				?>
