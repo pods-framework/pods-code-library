@@ -1,3 +1,21 @@
+<script>
+{
+    "title": "Using Pods Relationship Fields with GeoMashup",
+    "excerpt": "Learn how to map related posts, such as stores with a product in stock, using a Pods relationship field and GeoMashup.",
+    "author": "Josh412",
+    "termSlugs": {
+        "tutorial_type": [
+            "adding-custom-fields", "advanced", "using-pods-in-themes"
+        ]
+    },
+    "customFields": [
+    {"key":"_yoast_wpseo_title", "value": "Pods- Using Pods with GeoMashup"},
+    {"key":"_yoast_wpseo_metadesc", "value": "Learn how to map related posts, using a Pods relationship field and GeoMashup."}
+    ]
+}
+</script>
+
+
 Pods user [Maiki](http://interi.org/) previously published an [excellent article](http://interi.org/2014/04/pods-maps/) on how to use the plugin [GeoMashup](http://wordpress.org/plugins/geo-mashup/) with Pods. In it he covered the basics of how to use Pods Fields as the source for the GeoCoding, and how to show all posts in custom post type (CPT) added by Pods on a map.
 
 In this tutorial I will show you how to show a map using posts from a related CPT. An excellent example of when you would want to use this is when showing a single item in a product CPT, that has a related field for stores that have the item in stock. In this case we don't want to map the product, which is the default behaviour of GeoMashup. Instead, we want to display a map of where you can purchase the product.
