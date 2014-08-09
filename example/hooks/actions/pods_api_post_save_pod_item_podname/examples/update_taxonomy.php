@@ -15,6 +15,7 @@ function my_tax_update( $pieces, $is_new_item, $id ) {
 		$terms = null;
 	} else {
 		// create an array out of the comma separated values
+		// use this code if you want to save a single item only, if you want to save entries from a multi-select field comment this line
 		$terms = explode(',', $terms);
 		
 		// ensure all values in the array are integer (otherwise the numerical value is taken as a new taxonomy term instead of an ID)
