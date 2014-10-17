@@ -9,7 +9,7 @@
  * First we add the second field to the 'fields_active' array, and then we set its value. The second step would not work without the first, as $pieces[ 'fields' ][ 'number_of_legs' ] would not exist.
  */
 add_filter( 'pods_api_pre_save_pod_aliens', 'pre_save_alien_legs' );
-function 'pre_save_alien_legs'($piece) {
+function pre_save_alien_legs( $pieces) {
 
 
 		if ( 1 === $pieces[ 'fields' ][ 'bipedal' ][ 'value' ] ) {
