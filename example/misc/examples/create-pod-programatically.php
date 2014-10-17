@@ -9,6 +9,8 @@ $pod_name = 'frogs';
 
 //Set up the Pod.
 //You probably want to set an array of labels
+//For Custom Post Types you can choose meta or table storage.
+//The latter option requires the table storage componenet.
 $params = array(
 	'storage' 	=> 'table',
 	'type' 		=> 'post_type',
