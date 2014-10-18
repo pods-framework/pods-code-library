@@ -1,11 +1,11 @@
 <?php
 /**
- * Set the title of a custom post type Pod, based on the value of other fields, in this case "sandwich" and "beverage"
+ * Set the title of a custom post type Pod, based on the value of other fields, in this case the fields "sandwich" and "beverage" in the Pod "meal"
  *
  * This function only acts when a new item is created, but can be modified to act on all saves.
  */
-add_filter( 'pods_api_pre_save_pod_item_frogs', 'slug_set_title', 10, 2);
-function slug_num_not_zero($pieces, $is_new_item) {
+add_filter( 'pods_api_pre_save_pod_item_meal', 'slug_set_title', 10, 2);
+function slug_set_title($pieces, $is_new_item) {
 	//check if is new item, if not return $pieces without making any changes
 	if ( ! $is_new_item ) {
 		return $pieces;
@@ -23,13 +23,13 @@ function slug_num_not_zero($pieces, $is_new_item) {
 	$sandwich = $beverage = '';
 
 	//get value of "sandwich" if possible
-	if ( isset( $pieces[ 'fields'][ 'sandwich' ] ) && isset( $pieces[ 'fields'][ 'sandwich' ][ 'value'] ) && is_string( $pieces[ 'fields'][ 'sandwich' ][ 'value'] ) ) {
-		$sandwich = $pieces[ 'fields'][ 'sandwich' ][ 'value'];
+	if ( isset( $pieces[ 'fields' ][ 'sandwich' ] ) && isset( $pieces[ 'fields'][ 'sandwich' ][ 'value' ] ) && is_string( $pieces[ 'fields' ][ 'sandwich' ][ 'value' ] ) ) {
+		$sandwich = $pieces[ 'fields' ][ 'sandwich' ][ 'value' ];
 	}
 
 	//get value of "beverage" if possible
-	if ( isset( $pieces[ 'fields'][ 'beverage' ] ) && isset( $pieces[ 'fields'][ 'beverage' ][ 'value'] ) && is_string( $pieces[ 'fields'][ 'beverage' ][ 'value'] ) ) {
-		$sandwich = $pieces[ 'fields'][ 'sandwich' ][ 'value'];
+	if ( isset( $pieces[ 'fields' ][ 'beverage' ] ) && isset( $pieces[ 'fields'][ 'beverage' ][ 'value' ] ) && is_string( $pieces[ 'fields' ][ 'beverage' ][ 'value' ] ) ) {
+		$sandwich = $pieces[ 'fields' ][ 'sandwich' ][ 'value' ];
 	}
 
 	//set post title using $sandwich and $beverage
