@@ -12,7 +12,7 @@
     var api_NONCE = WP_API_Settings.nonce;
 
     //Pods endpoint URL
-    var pods_URL = WP_API_Settings + 'pods';
+    var pods_URL = root_URL + 'pods';
 
     function getItem( id, pod ) {
         var URL = pods_URL + '/' + pod + '/' + 'id';
