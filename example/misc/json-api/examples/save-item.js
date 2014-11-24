@@ -11,7 +11,7 @@
     var root_URL = WP_API_Settings.root;
 
     //API nonce
-    var api_nonce = WP_API_Settings.nonce;
+    var api_NONCE = WP_API_Settings.nonce;
 
     //Pods endpoint URL
     var pods_URL = root_URL + 'pods';
@@ -37,7 +37,7 @@
             dataType : 'json',
             data: data,
             beforeSend : function( xhr ) {
-                xhr.setRequestHeader( 'X-WP-Nonce', api_nonce );
+                xhr.setRequestHeader( 'X-WP-Nonce', api_NONCE );
             },
             success: function(response) {
                 alert( 'WOO!');
