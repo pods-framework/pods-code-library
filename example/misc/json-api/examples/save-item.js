@@ -8,16 +8,16 @@
 (function($){
 
     //root JSON URL
-    var rootURL = WP_API_Settings.root;
+    var rootUrl = WP_API_Settings.root;
 
     //API nonce
-    var apiNONCE = WP_API_Settings.nonce;
+    var apiNonce = WP_API_Settings.nonce;
 
     //Pods endpoint URL
-    var podsURL = WP_API_Settings + 'pods';
+    var podsUrl = rootUrl + 'pods';
 
     function saveItem( id, pod ) {
-        var URL = podsURL + '/' + pod + '/' + 'id';
+        var url = podsUrl + '/' + pod + '/' + id;
         var title = '';
         var homePlanet = '';
         var lightsaberColor = '';

@@ -6,33 +6,32 @@
 (function($){
 
     //root JSON URL
-    var root_URL = WP_API_Settings.root;
+    var rootUrl = WP_API_Settings.root;
 
     //API nonce
-    var api_NONCE = WP_API_Settings.nonce;
+    var apiNonce = WP_API_Settings.nonce;
 
     //Pods endpoint URL
-    var pods_URL = WP_API_Settings + 'pods';
+    var podsUrl = rootUrl + 'pods';
 
     //example params array
     var params = new Array(
-        'where=serves.meta_value= "four or more"',
-        'limit=7',
-        'orderby="t.post_title ASC"'
+        'data[limit=7]',
+        'data[orderby]="t.post_title ASC"'
     );
 
 
     function getItem( params, pod ) {
 
-        var URL = pods_URL + '/' + pod;
-        URL = '?' + params.join('&');
+        var url = podsUrl + '/' + pod;
+        url = '?' + params.join('&');
 
         $.ajax({
             type:"GET",
             url: url,
             dataType : 'json',
             beforeSend : function( xhr ) {
-                xhr.setRequestHeader( 'X-WP-Nonce', api_Nonce );
+                xhr.setRequestHeader( 'X-WP-Nonce', apiNonce );
             },
             success: function(posts) {
                 //do something
