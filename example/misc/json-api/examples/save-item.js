@@ -8,16 +8,16 @@
 (function($){
 
     //root JSON URL
-    var root_URL = WP_API_Settings.root;
+    var rootUrl = WP_API_Settings.root;
 
     //API nonce
-    var api_nonce = WP_API_Settings.nonce;
+    var apiNonce = WP_API_Settings.nonce;
 
     //Pods endpoint URL
-    var pods_URL = root_URL + 'pods';
+    var podsUrl = rootUrl + 'pods';
 
     function saveItem( id, pod ) {
-        var URL = pods_URL + '/' + pod + '/' + 'id';
+        var url = podsUrl + '/' + pod + '/' + id;
         var title = '';
         var homePlanet = '';
         var lightsaberColor = '';
@@ -37,7 +37,7 @@
             dataType : 'json',
             data: data,
             beforeSend : function( xhr ) {
-                xhr.setRequestHeader( 'X-WP-Nonce', api_nonce );
+                xhr.setRequestHeader( 'X-WP-Nonce', apiNonce );
             },
             success: function(response) {
                 alert( 'WOO!');
