@@ -1,0 +1,9 @@
+<?php
+/**
+* Enable Updating from Pods Admin -> Settings
+*/
+//allow updating from GitHub
+define( "PODS_GITHUB_UPDATE", true );
+
+//Set GitHub branch to update from
+define( "PODS_GITHUB_BRANCH", "2.X" );
