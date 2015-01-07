@@ -17,7 +17,7 @@
 		$img = wp_get_attachment_image_src( $id, 'large' );
 
 		//output image
-		echo '<img src="'.esc_url( $img[0] ).'" width="'.esc_attr( $img[1] ).'" width="'.esc_attr( $img[2] ).'" />';
+		echo '<img src="'.esc_url( $img[0] ).' " alt="'. $image['guid'] .' " width="'.esc_attr( $img[1] ).'" width="'.esc_attr( $img[2] ).'" />';
 
 	}
 	
