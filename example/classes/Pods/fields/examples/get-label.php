@@ -1,6 +1,6 @@
 <?php
 /**
-* Get a field's label
+* Get a field's label and value.
 */
 $pods = pods( 'sandwiches' );
 
