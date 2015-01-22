@@ -4,4 +4,4 @@
 */
 $pods = pods( 'sandwiches' );
 
-echo $pod->fields( 'toppings', 'label' );
+echo $pod->fields( 'toppings', 'label' ).": ".$pod->display('toppings');
