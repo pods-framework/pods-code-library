@@ -10,7 +10,7 @@
 *
 */
 //Using Pods class
-$pods = pods( 'download_category', array( 'tt.parent = "6"' ) );
+$pods = pods( 'download_category', array( 'tt.parent = 6' ) );
 
 //Using get_terms()
 $terms = get_terms( 'download_category', array( 'parent' => 6 ) );
@@ -20,8 +20,8 @@ $terms = get_terms( 'download_category', array( 'parent' => 6 ) );
  * Examples illustrating the diffrences described, pressuming the existance of a custom field called "word_count"
  */
  //Using Pods class
-$pods = pods( 'download_category', array( 'tt.parent = "6"' ) );
-if ( $pods->total() > 0 ) {
+$pods = pods( 'download_category', array( 'tt.parent = 6' ) );
+if ( 0 < $pods->total() ) { // optional
   while( $pods->fetch()  {
     //echo the term name
     echo $pods->display( 'name' );
