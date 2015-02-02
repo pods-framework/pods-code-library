@@ -43,5 +43,4 @@ foreach( $terms as $term ) {
   echo $term->word_count;
   
 }
-  
-}
+
