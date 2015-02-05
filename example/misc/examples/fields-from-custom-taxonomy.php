@@ -11,42 +11,48 @@ $taxonomy = 'genres';
 global $post;
 $terms = wp_get_post_terms( $post->ID, $taxonomy );
 
+
 //Put term ids in an array.
+$ids = array();
 foreach ( $terms as $term ) {
 	$ids[] = $term->term_id;
 }
 
-//build where clause to query by term_id(s)
-//Looping AND instead of using IN() is a workaround for https://github.com/pods-framework/pods/issues/1978
-$i = 0;
-foreach( $ids as $id ) {
-	if ( $i === 0 ) {
-		$where = 't.term_id = "'.$id.'"';
+//check that we found any terms, if so build a Pods obect, if not skip it.
+if ( ! empty( $ids ) ) {
+	//build where clause to query by term_id(s)
+	//Looping AND instead of using IN() is a workaround for https://github.com/pods-framework/pods/issues/1978
+	$i = 0;
+	foreach( $ids as $id ) {
+		if ( $i === 0 ) {
+			$where = 't.term_id = "'.$id.'"';
+		}
+		else {
+			$where .= ' OR t.term_id = "'.$id.'"';
+		}
+	
+		$i++;
+	
 	}
-	else {
-		$where .= ' OR t.term_id = "'.$id.'"';
+	
+	//build pods object
+	$params = array (
+		'where' => $where,
+		'limit' => 5,
+	);
+	$taxonomy = pods( $taxonomy, $params );
+	
+	//loop if there are matching terms, if there are not something ver wrong has happened.
+	if ( $taxonomy->total() > 0 ) {
+		while ( $taxonomy->fetch() ) {
+	
+			//echo custom field of taxonomy
+			echo $taxonomy->display( 'genre_name' );
+		}
+	
+		//paginate if needed
+		echo $taxonomy->pagination();
+	
 	}
-
-	$i++;
-
-}
-
-//build pods object
-$params = array (
-	'where' => $where,
-	'limit' => 5,
-);
-$taxonomy = pods( $taxonomy, $params );
-
-//loop if there are matching terms, if there are not something ver wrong has happened.
-if ( $taxonomy->total() > 0 ) {
-	while ( $taxonomy->fetch() ) {
-
-		//echo custom field of taxonomy
-		echo $taxonomy->display( 'genre_name' );
-	}
-
-	//paginate if needed
-	echo $taxonomy->pagination();
-
+	
 }
