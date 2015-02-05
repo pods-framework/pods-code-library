@@ -10,7 +10,7 @@
 *
 */
 //Using Pods class
-$pods = pods( 'download_category', array( 'where' => tt.parent = 6' ) );
+$pods = pods( 'download_category', array( 'where' => 'tt.parent = 6' ) );
 
 //Using get_terms()
 $terms = get_terms( 'download_category', array( 'parent' => 6 ) );
