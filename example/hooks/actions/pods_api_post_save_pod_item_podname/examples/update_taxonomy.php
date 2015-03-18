@@ -14,8 +14,10 @@ function my_tax_update( $pieces, $is_new_item, $id ) {
 		// if there is nothing there set $term to null to avoid errors
 		$terms = null;
 	} else {
-		// create an array out of the comma separated values
-		$terms = explode(',', $terms);
+		if ( ! is_array($terms) ) {
+			// create an array out of the comma separated values
+			$terms = explode(',', $terms);
+		}
 		
 		// ensure all values in the array are integer (otherwise the numerical value is taken as a new taxonomy term instead of an ID)
         	$terms = array_map('intval', $terms);
