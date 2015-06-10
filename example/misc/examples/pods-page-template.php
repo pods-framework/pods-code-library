@@ -13,10 +13,10 @@ get_header();
 	<?php
 			//setup Pod object presuming permalink structure of example.com/pod-name/item-name
 			//get current item name
-			$slug = pods_v( 'last', 'url' );
+			$slug = pods_v_sanitized( 'last', 'url' );
 
 			//get current pod name
-			$pod_name = pods_v( 0, 'url');
+			$pod_name = pods_v_sanitized( 0, 'url');
 
 			//get pods object
 			$pods = pods( $pod_name, $slug );
