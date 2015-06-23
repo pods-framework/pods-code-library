@@ -12,8 +12,8 @@
 
 add_filter( 'pods_shortcode_findrecords_params', 'slug_orderby_by_number_pods_shortcode', 10, 2 );
 function slug_orderby_by_number_pods_shortcode( $params, $pod ) {
-	if ( isset( $params[ 'orderby' ] ) && strpos($params[ 'orderby' ], 'meta_value_num') ) {
-		$params[ 'orderby' ] = 'CAST(' . str_replace('_num', '', $params[ 'orderby' ]) . ' AS DECIMAL)';
+	if ( isset( $params[ 'orderby' ] ) && strpos($params[ 'orderby' ], '.meta_value_num') ) {
+		$params[ 'orderby' ] = 'CAST(' . str_replace('.meta_value_num', '.meta_value', $params[ 'orderby' ]) . ' AS DECIMAL)';
 	}
 
 	return $params;
