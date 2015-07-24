@@ -16,7 +16,7 @@
 
     //example params array
     var params = new Array(
-        'data[limit=7]',
+        'data[limit]=7',
         'data[orderby]="t.post_title ASC"'
     );
 
