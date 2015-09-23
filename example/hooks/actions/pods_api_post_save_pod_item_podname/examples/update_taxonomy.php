@@ -24,6 +24,6 @@ function my_tax_update( $pieces, $is_new_item, $id ) {
 	}
 
 	// Set the term for taxonomy 'genre' with $terms
-	wp_set_object_terms( $id, $term, 'genre', false );
+	wp_set_object_terms( $id, $terms, 'genre', false );
 	
 }
