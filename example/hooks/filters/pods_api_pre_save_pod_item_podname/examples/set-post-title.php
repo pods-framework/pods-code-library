@@ -29,11 +29,11 @@ function slug_set_title($pieces, $is_new_item) {
 
 	//get value of "beverage" if possible
 	if ( isset( $pieces[ 'fields' ][ 'beverage' ] ) && isset( $pieces[ 'fields'][ 'beverage' ][ 'value' ] ) && is_string( $pieces[ 'fields' ][ 'beverage' ][ 'value' ] ) ) {
-		$sandwich = $pieces[ 'fields' ][ 'sandwich' ][ 'value' ];
+		$beverage = $pieces[ 'fields' ][ 'beverage' ][ 'value' ];
 	}
 
 	//set post title using $sandwich and $beverage
-	$pieces[ 'fields' ][ 'post_title' ][ 'value' ] = $sandwich . ' and ' . $beverage;
+	$pieces[ 'object_fields' ][ 'post_title' ][ 'value' ] = $sandwich . ' and ' . $beverage;
 
 	//return $pieces to save
 	return $pieces;
